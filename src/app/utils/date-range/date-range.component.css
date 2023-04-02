@@ -1,0 +1,10 @@
+.date-range {
+  display: inline;
+  margin-left: 0.5em;
+  color: var(--blue);
+}
+
+.date-range span {
+  font-style: italic;
+  color: var(--blue);
+}

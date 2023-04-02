@@ -1,0 +1,6 @@
+<h2>Tools</h2>
+<div class="tools-wrapper">
+  <app-grouped-tools *ngFor="let toolsSet of namedToolsSet " [title]="toolsSet.title"
+                     [tools]="toolsSet.tools"></app-grouped-tools>
+</div>
+

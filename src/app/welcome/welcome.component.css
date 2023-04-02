@@ -1,0 +1,38 @@
+div {
+  width: 450px;
+  text-align: center;
+  margin: auto;
+}
+
+div * {
+  text-align: left;
+}
+div a {
+  opacity: 0.6;
+}
+
+div a img {
+  scale: 0.5;
+  margin: 0.1em;
+}
+
+
+div a:hover {
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+}
+
+div a {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+

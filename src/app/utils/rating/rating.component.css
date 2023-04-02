@@ -1,0 +1,27 @@
+.rating {
+  display: inline-block;
+  width: 67px;
+  height: 18px;
+  position: relative;
+  margin-left: 1em;
+}
+
+.rating span {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  display: inline-block;
+  font-size: 1.4em;
+  color: var(--orange);
+}
+
+.unselected-stars {
+  z-index: 1;
+}
+
+.selected-stars {
+  overflow: hidden;
+  z-index: 2;
+}
+
+

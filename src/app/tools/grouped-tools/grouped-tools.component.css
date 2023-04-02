@@ -1,0 +1,10 @@
+.tool-list {
+  width: 30em;
+}
+
+.tool-list div {
+  display: block;
+  text-align: left;
+  margin-left: 0.5em;
+  text-transform: uppercase;
+}

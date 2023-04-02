@@ -1,0 +1,34 @@
+.education-level {
+  margin: 0.5em 0;
+}
+
+.education-level a {
+  color: var(--yellow);
+}
+
+.education-level a:hover {
+  color: var(--orange);
+}
+
+.education-level p:nth-child(2) {
+  color: var(--blue);
+  font-size: 0.8em;
+}
+
+.education-level p:nth-child(2) span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.education-level p:nth-child(3) {
+  color: var(--gray);
+  font-size: 0.8em;
+}
+
+.education-level p:nth-child(3) span:nth-child(2) {
+  color: var(--gray);
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+

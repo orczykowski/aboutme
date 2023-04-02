@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "about-me-app"
+  "cli": {
+    "analytics": "781738ba-09b1-438f-bf92-b56a84eeefa7"
+  }
 }

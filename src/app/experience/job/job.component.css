@@ -1,0 +1,38 @@
+.job {
+  margin-top: 2em;
+}
+
+.job div {
+  margin: 1em;
+}
+
+.job div div {
+  margin-left: 0px;
+}
+.main-info {
+  font-weight: bold;
+}
+
+.main-info .position {
+  color: var(--light-green);
+  font-size: 1.2em;
+}
+
+.main-info .company-name {
+  color: var(--green);
+  font-size: 0.9em;
+  margin-bottom: 0.5em
+}
+h4, label {
+  color: var(--orange);
+}
+label {
+  font-style: italic;
+  margin-right: 0.5em;
+  font-size: 0.8em;
+  text-transform: lowercase;
+
+}
+
+
+
