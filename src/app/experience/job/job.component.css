@@ -9,6 +9,7 @@
 .job div div {
   margin-left: 0px;
 }
+
 .main-info {
   font-weight: bold;
 }
@@ -23,15 +24,20 @@
   font-size: 0.9em;
   margin-bottom: 0.5em
 }
+
 h4, label {
   color: var(--orange);
 }
+
 label {
   font-style: italic;
   margin-right: 0.5em;
   font-size: 0.8em;
   text-transform: lowercase;
+}
 
+.methodology {
+  overflow: clip;
 }
 
 

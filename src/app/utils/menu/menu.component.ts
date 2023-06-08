@@ -17,7 +17,6 @@ export class MenuComponent implements OnInit {
   hideMenu(): void {
     this.setMenuVisibility(false);
   }
-
   ngOnInit(): void {
     this.menuService
       .menuVisibility

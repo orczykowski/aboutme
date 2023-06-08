@@ -39,7 +39,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1.4;
-  color: wheat;
 }
 
 p, span, h2, h3, div, ul, li, a, label {
@@ -74,12 +73,6 @@ h3 {
   font-size: 1em;
   color: var(--light-green);
   font-weight: bold;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 ul {

@@ -15,7 +15,7 @@
       <p *ngIf="jobInfo?.mainTechnologies?.length != 0">
         <label>Methodologies:</label>
         <span class="methodology"
-              *ngFor="let methodology of jobInfo?.methodologies">{{methodology | lowercase}}</span>
+              *ngFor="let methodology of jobInfo?.methodologies">{{methodology | lowercase}}, </span>
       </p>
       <p *ngIf="jobInfo?.systemArchitecture">
         <label>System architecture:</label>
@@ -24,7 +24,7 @@
       <p *ngIf="jobInfo?.applicationArchitectures?.length != 0">
         <label>Application architectures:</label>
         <span class="methodology"
-              *ngFor="let architecture of jobInfo?.applicationArchitectures">{{architecture | lowercase}}</span>
+              *ngFor="let architecture of jobInfo?.applicationArchitectures">{{architecture | lowercase}}, </span>
       </p>
     </div>
     <div class="main-responsibilities">

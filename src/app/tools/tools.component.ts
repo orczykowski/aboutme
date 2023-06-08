@@ -1,5 +1,10 @@
 import {Component} from '@angular/core';
-import {Methodology, Technology} from "../utils/technologies/definition.model";
+import {
+  ApplicationArchitecture,
+  Methodology,
+  SystemArchitecture,
+  Technology
+} from "../utils/technologies/definition.model";
 import {ToolsSetDefinition} from "./tool-model";
 
 @Component({
@@ -66,7 +71,7 @@ export class ToolsComponent {
     {
       'title': 'Databases', 'tools': [
         {experienceRate: 4, name: Technology.MONGO_DB},
-        {experienceRate: 3, name: Technology.POSGRESS},
+        {experienceRate: 3, name: Technology.POSTGRES},
         {experienceRate: 4, name: Technology.MY_SQL},
         {experienceRate: 4, name: Technology.MS_SQL},
         {experienceRate: 3, name: Technology.HDFS},
@@ -77,7 +82,7 @@ export class ToolsComponent {
       ]
     },
     {
-      'title': 'Infrastructure / monitoring', 'tools': [
+      'title': 'Infrastructure / monitoring (as a user not devOps)', 'tools': [
         {experienceRate: 3, name: "CI/CD"},
         {experienceRate: 3, name: Technology.MESOS},
         {experienceRate: 3, name: Technology.JENKINS},
@@ -88,7 +93,7 @@ export class ToolsComponent {
         {experienceRate: 3, name: Technology.K8S},
         {experienceRate: 3, name: Technology.BAMBOO},
         {experienceRate: 4, name: Technology.KAFKA},
-        {experienceRate: 3, name: Technology.RABBIT_MQ},
+        {experienceRate: 2.5, name: Technology.RABBIT_MQ},
         {experienceRate: 5, name: "Blue green deployment"},
         {experienceRate: 5, name: "Monitoring"},
         {experienceRate: 5, name: Technology.PROMETHEUS},
@@ -121,6 +126,25 @@ export class ToolsComponent {
         {experienceRate: 5, name: "CLEAN CODE"},
         {experienceRate: 5, name: "DRY"},
         {experienceRate: 5, name: "YAGNI"},
+        {experienceRate: 4, name: "Event storming"},
+
+      ]
+    },
+    {
+      'title': 'System architecture', 'tools': [
+        {experienceRate: 5, name: SystemArchitecture.MICROSERVICES},
+        {experienceRate: 5, name: SystemArchitecture.MICRO_MONOLITH},
+        {experienceRate: 5, name: SystemArchitecture.MONOLITH},
+
+      ]
+    },
+    {
+      'title': 'Application architecture', 'tools': [
+        {experienceRate: 5, name: ApplicationArchitecture.LAYERED_ARCHITECTURE},
+        {experienceRate: 5, name: ApplicationArchitecture.HEXAGONAL_ARCHITECTURE},
+        {experienceRate: 5, name: ApplicationArchitecture.PIPE_AND_FILTERS},
+        {experienceRate: 4, name: ApplicationArchitecture.MICRO_CARNAL},
+        {experienceRate: 4, name: ApplicationArchitecture.CQRS},
       ]
     },
     {
@@ -137,12 +161,18 @@ export class ToolsComponent {
     {
       'title': 'Other', 'tools': [
         {experienceRate: 2, name: "Big data"},
+        {experienceRate: 5, name: "Testing UNIT"},
+        {experienceRate: 5, name: "Testing INTEGRATION"},
+        {experienceRate: 5, name: "Testing E2E"},
         {experienceRate: 5, name: "A/B testing"},
-        {experienceRate: 5, name: "Testing UNIT/INTEGRATION/E2E"},
         {experienceRate: 5, name: "Architecture"},
         {experienceRate: 5, name: "Quality"},
         {experienceRate: 5, name: Technology.GIT},
-
+        {experienceRate: 4, name: "WordPress"},
+        {experienceRate: 4.5, name: "Sonar"},
+        {experienceRate: 4, name: "Linux"},
+        {experienceRate: 4, name: "MacOsx"},
+        {experienceRate: 4.5, name: "InteliJ"},
       ]
     }
   ];

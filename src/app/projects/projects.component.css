@@ -1,0 +1,20 @@
+div.project {
+  margin-top: 2.5em;
+}
+
+.project-description *{
+  color: var(--gray);
+  font-style: initial;
+  font-size: 0.9em;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 1em 0 0.75em 0;
+}
+
+div.project a {
+  display: block;
+  color: var(--blue);
+}

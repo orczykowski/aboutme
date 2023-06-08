@@ -115,7 +115,7 @@ export class JobRepository {
         end: new Date("2019-12-31"),
         mainTechnologies: [Technology.JAVA, Technology.GROOVY, Technology.SPRING, Technology.SPRING_DATA, Technology.SPRING_SECURITY, Technology.O_AUTH2,
           Technology.SPRING_BOOT, Technology.SPOCK, Technology.SPRING_TEST, Technology.ANGULAR, Technology.CSS, Technology.HTML, Technology.MONGO_DB,
-          Technology.POSGRESS, Technology.REST, Technology.WIRE_MOCK, Technology.OPEN_FEIGN, Technology.JSON, Technology.YAML, Technology.SQL, Technology.GRADLE],
+          Technology.POSTGRES, Technology.REST, Technology.WIRE_MOCK, Technology.OPEN_FEIGN, Technology.JSON, Technology.YAML, Technology.SQL, Technology.GRADLE],
         otherTechnologies: [Technology.GIT, Technology.AWS],
         methodologies: [Methodology.AGILE, Methodology.KANBAN, Methodology.XP],
         mainResponsibilities: [

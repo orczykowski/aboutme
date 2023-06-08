@@ -1,5 +1,5 @@
 div {
-  width: 450px;
+  width: 100%;
   text-align: center;
   margin: auto;
 }
@@ -15,7 +15,6 @@ div a img {
   scale: 0.5;
   margin: 0.1em;
 }
-
 
 div a:hover {
   animation: fadeIn 1s;

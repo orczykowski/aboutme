@@ -32,7 +32,7 @@ enum Technology {
   REDIS = "redis",
   MEMCACHE = "memcache",
   HADOOP = "hadoop",
-  POSGRESS = "posgress",
+  POSTGRES = "POSTGRES",
   ANGULAR = "angular",
   REACT = "react",
   JQUERY = "jquery",
@@ -45,12 +45,12 @@ enum Technology {
   OKD = "okd",
   ARGO = "argo",
   KAFKA = "kafka",
-  RABBIT_MQ = "rabbit_mq",
+  RABBIT_MQ = "rabbit mq",
   KIBANA = "kibana",
   GRAFANA = "grafana",
   PROMETHEUS = "prometheus",
   SLEUTH = "sleuth",
-  MICRO_METER = "micro_meter",
+  MICRO_METER = "micro meter",
   LOMBOK = "lombok",
   HUE = "hue",
   HIVE = "hive",
@@ -95,6 +95,7 @@ enum ApplicationArchitecture {
   LAYERED_ARCHITECTURE = "LAYERED ARCHITECTURE",
   PIPE_AND_FILTERS = "PIPE AND FILTERS",
   MICRO_CARNAL = "MICRO CARNAL",
+  CQRS = "CQRS"
 }
 
 enum SystemArchitecture {
