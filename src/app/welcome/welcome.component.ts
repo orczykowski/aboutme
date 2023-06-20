@@ -13,4 +13,5 @@ export class WelcomeComponent {
   showMenu() {
     this.menuService.showMenu();
   }
+
 }

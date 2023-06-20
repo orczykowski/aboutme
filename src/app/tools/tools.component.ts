@@ -17,7 +17,7 @@ export class ToolsComponent {
   namedToolsSet: ToolsSetDefinition[] = [
     {
       'title': 'Programming languages', 'tools': [
-        {experienceRate: 5, name: Technology.JAVA},
+        {experienceRate: 4.5, name: Technology.JAVA},
         {experienceRate: 4, name: Technology.GROOVY},
         {experienceRate: 3, name: Technology.KOTLIN},
         {experienceRate: 4, name: Technology.JAVA_SCRIPT},
@@ -38,7 +38,7 @@ export class ToolsComponent {
         {experienceRate: 4, name: Technology.RIBBON},
         {experienceRate: 4, name: Technology.EUREKA},
         {experienceRate: 4, name: "SLF4J"},
-        {experienceRate: 4, name: "LOG4J"},
+        {experienceRate: 4, name: "LOGBACK"},
         {experienceRate: 5, name: Technology.JPA},
         {experienceRate: 5, name: Technology.HIBERNATE},
         {experienceRate: 4, name: Technology.JERSEY},
@@ -106,7 +106,7 @@ export class ToolsComponent {
     {
       'title': 'Api', 'tools': [
         {experienceRate: 5, name: Technology.REST},
-        {experienceRate: 3.5, name: Technology.SOAP},
+        {experienceRate: 3, name: Technology.SOAP},
         {experienceRate: 4.5, name: Technology.GRAPH_QL}]
     },
     {

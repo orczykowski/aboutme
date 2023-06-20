@@ -219,28 +219,6 @@ export class JobRepository {
         description: "Body leasing to the insurance (Nationale Nederlanden) company. Working as developer in the area of claim reporting and out payments. Rewriting old applications to a  microservices architecture with new tech stack"
       },
       {
-        companyName: "Transaction link",
-        position: "Senior software engineer",
-        begin: new Date("2022-01-01"),
-        end: new Date("2022-03-01"),
-        mainTechnologies: [
-          Technology.SPRING, Technology.SPRING_DATA, Technology.SPRING_CLOUD, Technology.SPRING_BOOT, Technology.SPRING_BOOT, Technology.MAVEN,
-          Technology.JAVA, Technology.REST, Technology.GROOVY],
-        otherTechnologies: [Technology.GIT, Technology.AWS, Technology.GITHUB],
-        methodologies: [Methodology.AGILE, Methodology.SCRUM],
-        mainResponsibilities: [
-          "software development",
-          "creating automated tests",
-          "design system/application architecture"
-        ],
-        additionalResponsibilities: [],
-        applicationArchitectures: [
-          ApplicationArchitecture.HEXAGONAL_ARCHITECTURE,
-          ApplicationArchitecture.MVC],
-        systemArchitecture: SystemArchitecture.MICROSERVICES,
-        description: "Fintech startup. (Short time limited cooperation). Support in designing the architecture and implementing functionalities in a system that allows you to compose business flows for financial institutions"
-      },
-      {
         companyName: "Nationale nederlanden",
         position: "Software engineering lead",
         begin: new Date("2022-02-01"),
@@ -279,6 +257,26 @@ export class JobRepository {
           ApplicationArchitecture.MVC, ApplicationArchitecture.HEXAGONAL_ARCHITECTURE, ApplicationArchitecture.LAYERED_ARCHITECTURE],
         systemArchitecture: SystemArchitecture.MICROSERVICES,
         description: "Working as developer in the area of claim reporting and out payments. Rewriting old applications to a  microservices architecture with new tech stack"
+      },
+      {
+        companyName: "Smartfrigo",
+        position: "developer",
+        begin: new Date("2010-07-01"),
+        end: new Date("2011-12-31"),
+        mainTechnologies: [Technology.PHP, Technology.HTML, Technology.XML, Technology.HTML, Technology.CSS],
+        otherTechnologies: [],
+        methodologies: [],
+        mainResponsibilities: [
+          "creating backend and frontend functionalists",
+          "design system/application architecture",
+          "testing application"
+        ],
+        additionalResponsibilities: [],
+        applicationArchitectures: [
+          ApplicationArchitecture.MVC],
+        systemArchitecture: SystemArchitecture.MONOLITH,
+        description:
+          "Creation of a refrigerated transport exchange platform. Platform that allows you to optimize transport costs by selling / renting transport space on selected sections of the route for large trucks"
       },
     ].sort((job1: JobInfo, job2: JobInfo) => this.compare(job1, job2));
   }

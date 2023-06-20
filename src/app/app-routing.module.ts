@@ -6,6 +6,7 @@ import {ExperienceComponent} from "./experience/experience.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import {EducationComponent} from "./education/education.component";
 import {ProjectsComponent} from "./projects/projects.component";
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 const routes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -16,10 +17,10 @@ const routes: Routes = [
   {path: '**', component: NotFoundComponent},
 ];
 
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}]
 })
 export class AppRoutingModule {
 }

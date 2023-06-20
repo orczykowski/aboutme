@@ -13,3 +13,14 @@
   padding: 25px;
 }
 
+@media only screen and (max-width: 800px) {
+  .content {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .content div {
+    padding: 5px;
+  }
+}
+

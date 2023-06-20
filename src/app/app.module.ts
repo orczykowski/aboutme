@@ -15,6 +15,7 @@ import {TechnologiesComponent} from './utils/technologies/technologies.component
 import { MenuComponent } from './utils/menu/menu.component';
 import { GroupedToolsComponent } from './tools/grouped-tools/grouped-tools.component';
 import { RatingComponent } from './utils/rating/rating.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RatingComponent } from './utils/rating/rating.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
