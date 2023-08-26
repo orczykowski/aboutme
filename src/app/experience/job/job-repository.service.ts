@@ -18,24 +18,6 @@ export class JobRepository {
   findAll(): JobInfo[] {
     return [
       {
-        companyName: "Smart Frigo",
-        position: "Smart Frigo - PROGRAMMER (freelance)",
-        begin: new Date("2010-07-01"),
-        end: new Date("2011-12-01"),
-        mainTechnologies: [Technology.PHP, Technology.CSS, Technology.HTML, Technology.JAVA_SCRIPT, Technology.JQUERY, Technology.SQL],
-        otherTechnologies: [Technology.SVN],
-        methodologies: [Methodology.WATERFALL],
-        mainResponsibilities: ["design and implementation of website functionalities (backend [PHP] / frontend)", "testing the implemented functionalities"],
-        additionalResponsibilities: ["Support founders with design functionalities"],
-        applicationArchitectures: [
-          ApplicationArchitecture.LAYERED_ARCHITECTURE,
-          ApplicationArchitecture.MVC],
-        systemArchitecture: SystemArchitecture.MONOLITH,
-        description: "\n" +
-          "A platform for selling / booking space on refrigerated trucks transporting goods around Europe"
-
-      },
-      {
         companyName: "University of Adama Mickiewicz in Poznań",
         position: "Lecture",
         begin: new Date("2015-02-01"),
@@ -267,11 +249,11 @@ export class JobRepository {
         otherTechnologies: [],
         methodologies: [],
         mainResponsibilities: [
-          "creating backend and frontend functionalists",
+          "design, creating backend and frontend functionalists",
           "design system/application architecture",
-          "testing application"
+          "testing application",
         ],
-        additionalResponsibilities: [],
+        additionalResponsibilities: ["Support founders with design functionalities"],
         applicationArchitectures: [
           ApplicationArchitecture.MVC],
         systemArchitecture: SystemArchitecture.MONOLITH,
