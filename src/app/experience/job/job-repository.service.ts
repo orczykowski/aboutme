@@ -1,11 +1,6 @@
 import {Injectable} from '@angular/core';
 import {JobInfo} from "./job.model";
-import {
-  ApplicationArchitecture,
-  Methodology,
-  SystemArchitecture,
-  Technology
-} from "../../utils/technologies/definition.model";
+import {ApplicationArchitecture, Methodology, SystemArchitecture, Technology} from "../../utils/technologies/definition.model";
 
 @Injectable({
   providedIn: 'root'
@@ -17,24 +12,6 @@ export class JobRepository {
 
   findAll(): JobInfo[] {
     return [
-      {
-        companyName: "Smart Frigo",
-        position: "Smart Frigo - PROGRAMMER (freelance)",
-        begin: new Date("2010-07-01"),
-        end: new Date("2011-12-01"),
-        mainTechnologies: [Technology.PHP, Technology.CSS, Technology.HTML, Technology.JAVA_SCRIPT, Technology.JQUERY, Technology.SQL],
-        otherTechnologies: [Technology.SVN],
-        methodologies: [Methodology.WATERFALL],
-        mainResponsibilities: ["design and implementation of website functionalities (backend [PHP] / frontend)", "testing the implemented functionalities"],
-        additionalResponsibilities: ["Support founders with design functionalities"],
-        applicationArchitectures: [
-          ApplicationArchitecture.LAYERED_ARCHITECTURE,
-          ApplicationArchitecture.MVC],
-        systemArchitecture: SystemArchitecture.MONOLITH,
-        description: "\n" +
-          "A platform for selling / booking space on refrigerated trucks transporting goods around Europe"
-
-      },
       {
         companyName: "University of Adama Mickiewicz in Poznań",
         position: "Lecture",
@@ -267,16 +244,44 @@ export class JobRepository {
         otherTechnologies: [],
         methodologies: [],
         mainResponsibilities: [
-          "creating backend and frontend functionalists",
+          "design, creating backend and frontend functionalists",
           "design system/application architecture",
-          "testing application"
+          "testing application",
         ],
-        additionalResponsibilities: [],
+        additionalResponsibilities: ["Support founders with design functionalities"],
         applicationArchitectures: [
           ApplicationArchitecture.MVC],
         systemArchitecture: SystemArchitecture.MONOLITH,
         description:
           "Creation of a refrigerated transport exchange platform. Platform that allows you to optimize transport costs by selling / renting transport space on selected sections of the route for large trucks"
+      },
+
+      {
+        companyName: "J-laabs - Brown Brothers Harriman",
+        position: "technical leader",
+        begin: new Date("2023-09-15"),
+        mainTechnologies:
+          [Technology.JAVA, Technology.SPRING, Technology.SPRING_TEST, Technology.ANGULAR
+          ],
+        otherTechnologies: [Technology.EUREKA, Technology.K8S, Technology.MAVEN, Technology.GRADLE, Technology.ORACLE],
+        methodologies: [Methodology.SCRUM],
+        mainResponsibilities: [
+          "design, creating backend and frontend functionalists",
+          "design system/application architecture",
+          "testing application",
+          "technology selection",
+          "application optimization",
+          "CICD creation/optimization",
+          "team support in technical decisions",
+          "creating documentation",
+          "process standardization support"
+        ],
+        additionalResponsibilities: [],
+        applicationArchitectures: [
+          ApplicationArchitecture.OTHER],
+        systemArchitecture: SystemArchitecture.MONOLITH,
+        description:
+          "Work at a BBH client, on the client's internal system"
       },
     ].sort((job1: JobInfo, job2: JobInfo) => this.compare(job1, job2));
   }

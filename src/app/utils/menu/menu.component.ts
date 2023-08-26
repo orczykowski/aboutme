@@ -22,13 +22,6 @@ export class MenuComponent implements OnInit {
       .subscribe(isVisible => this.setMenuVisibility(isVisible));
   }
 
-  downloadCv(): void {
-    const link = document.createElement('a');
-    link.href = 'assets/grzegorz_orczykowski_cv.pdf';
-    link.download = 'grzegorz_orczykowski_cv.pdf';
-    link.dispatchEvent(new MouseEvent('click', {bubbles: true, cancelable: true, view: window}));
-  }
-
   private setMenuVisibility(isVisible: boolean): void {
     this.isMenuVisible.nativeElement.checked = isVisible;
   }

@@ -95,13 +95,15 @@ enum ApplicationArchitecture {
   LAYERED_ARCHITECTURE = "LAYERED ARCHITECTURE",
   PIPE_AND_FILTERS = "PIPE AND FILTERS",
   MICRO_CARNAL = "MICRO CARNAL",
-  CQRS = "CQRS"
+  CQRS = "CQRS",
+  OTHER = "OTHER"
 }
 
 enum SystemArchitecture {
   MONOLITH = "monolith",
   MICROSERVICES = "microservices",
   MICRO_MONOLITH = "micro monolith",
+
 }
 
 enum Methodology {

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import {MenuService} from "../utils/menu/menu.service";
 
 @Component({
@@ -7,11 +7,13 @@ import {MenuService} from "../utils/menu/menu.service";
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
+
+
   constructor(private menuService: MenuService) {
   }
+
 
   showMenu() {
     this.menuService.showMenu();
   }
-
 }
