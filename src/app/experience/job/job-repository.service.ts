@@ -266,15 +266,16 @@ export class JobRepository {
         otherTechnologies: [Technology.EUREKA, Technology.K8S, Technology.MAVEN, Technology.GRADLE, Technology.ORACLE],
         methodologies: [Methodology.SCRUM],
         mainResponsibilities: [
-          "design, creating backend and frontend functionalists",
-          "design system/application architecture",
-          "testing application",
-          "technology selection",
-          "application optimization",
+          "Design and development of both backend and frontend functionality",
+          "Designing the architecture of both the system and the application",
+          "Refactoring - rewriting inefficient parts of the application / coordinating activities",
+          "Management i Coordination of team work",
+          "Technical debt management",
+          "Defining technical requirements",
+          "Education of team members",
           "CICD creation/optimization",
-          "team support in technical decisions",
-          "creating documentation",
-          "process standardization support"
+          "Creating documentation",
+          "Process standardization support"
         ],
         additionalResponsibilities: [],
         applicationArchitectures: [
