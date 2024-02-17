@@ -1,10 +1,5 @@
 import {Component} from '@angular/core';
-import {
-  ApplicationArchitecture,
-  Methodology,
-  SystemArchitecture,
-  Technology
-} from "../utils/technologies/definition.model";
+import {ApplicationArchitecture, Methodology, SystemArchitecture, Technology} from "../utils/technologies/definition.model";
 import {ToolsSetDefinition} from "./tool-model";
 
 @Component({
@@ -17,13 +12,13 @@ export class ToolsComponent {
   namedToolsSet: ToolsSetDefinition[] = [
     {
       'title': 'Programming languages', 'tools': [
-        {experienceRate: 4.5, name: Technology.JAVA},
+        {experienceRate: 4.7, name: Technology.JAVA},
         {experienceRate: 4, name: Technology.GROOVY},
-        {experienceRate: 3, name: Technology.KOTLIN},
+        {experienceRate: 2.7, name: Technology.KOTLIN},
         {experienceRate: 4, name: Technology.JAVA_SCRIPT},
-        {experienceRate: 4, name: Technology.TYPE_SCRIPT},
+        {experienceRate: 3.8, name: Technology.TYPE_SCRIPT},
         {experienceRate: 2, name: Technology.PHP},
-        {experienceRate: 2, name: Technology.BASH},
+        {experienceRate: 2.5, name: Technology.BASH},
         {experienceRate: 4, name: Technology.SQL},
       ]
     },
@@ -33,12 +28,12 @@ export class ToolsComponent {
         {experienceRate: 5, name: Technology.SPRING_BOOT},
         {experienceRate: 4, name: Technology.SPRING_SECURITY},
         {experienceRate: 4, name: Technology.SPRING_CLOUD},
-        {experienceRate: 4, name: Technology.LOMBOK},
-        {experienceRate: 4, name: Technology.ACTUATOR},
+        {experienceRate: 5, name: Technology.LOMBOK},
+        {experienceRate: 5, name: Technology.ACTUATOR},
         {experienceRate: 4, name: Technology.RIBBON},
-        {experienceRate: 4, name: Technology.EUREKA},
-        {experienceRate: 4, name: "SLF4J"},
-        {experienceRate: 4, name: "LOGBACK"},
+        {experienceRate: 5, name: Technology.EUREKA},
+        {experienceRate: 5, name: "SLF4J"},
+        {experienceRate: 5, name: "LOGBACK"},
         {experienceRate: 5, name: Technology.JPA},
         {experienceRate: 5, name: Technology.HIBERNATE},
         {experienceRate: 4, name: Technology.JERSEY},
@@ -49,8 +44,8 @@ export class ToolsComponent {
     },
     {
       'title': 'Test tools', 'tools': [
-        {experienceRate: 4.5, name: Technology.SPOCK},
-        {experienceRate: 5, name: Technology.JUNIT},
+        {experienceRate: 4.8, name: Technology.SPOCK},
+        {experienceRate: 4.8, name: Technology.JUNIT},
         {experienceRate: 5, name: Technology.WIRE_MOCK},
         {experienceRate: 4, name: Technology.RESTITO},
         {experienceRate: 4.5, name: Technology.REST_ASSURED},
@@ -60,12 +55,12 @@ export class ToolsComponent {
     {
       'title': 'Frontend frameworks / libraries', 'tools': [
         {experienceRate: 5, name: Technology.HTML},
-        {experienceRate: 3, name: Technology.CSS},
+        {experienceRate: 3.5, name: Technology.CSS},
         {experienceRate: 3.5, name: Technology.ANGULAR},
         {experienceRate: 2.3, name: Technology.REACT},
         {experienceRate: 3, name: Technology.JQUERY},
-        {experienceRate: 3, name: Technology.FREEMARKER},
-        {experienceRate: 3, name: Technology.THYMELEAF},
+        {experienceRate: 4, name: Technology.FREEMARKER},
+        {experienceRate: 4, name: Technology.THYMELEAF},
       ]
     },
     {
@@ -74,33 +69,33 @@ export class ToolsComponent {
         {experienceRate: 3, name: Technology.POSTGRES},
         {experienceRate: 4, name: Technology.MY_SQL},
         {experienceRate: 4, name: Technology.MS_SQL},
+        {experienceRate: 4, name: Technology.ORACLE},
         {experienceRate: 3, name: Technology.HDFS},
         {experienceRate: 2, name: Technology.REDIS},
-        {experienceRate: 2, name: Technology.MEMCACHE},
-        {experienceRate: 2, name: Technology.ELASTIC_SEARCH},
+        {experienceRate: 4, name: Technology.MEMCACHE},
+        {experienceRate: 3, name: Technology.ELASTIC_SEARCH},
         {experienceRate: 2, name: Technology.HAZELCAST},
       ]
     },
     {
       'title': 'Infrastructure / monitoring (as a user not devOps)', 'tools': [
-        {experienceRate: 3, name: "CI/CD"},
+        {experienceRate: 4.5, name: "CI/CD"},
         {experienceRate: 3, name: Technology.MESOS},
-        {experienceRate: 3, name: Technology.JENKINS},
+        {experienceRate: 4.5, name: Technology.JENKINS},
         {experienceRate: 5, name: Technology.GRAFANA},
-        {experienceRate: 4, name: Technology.KIBANA},
+        {experienceRate: 4.5, name: Technology.KIBANA},
         {experienceRate: 4, name: Technology.GRAY_LOG},
         {experienceRate: 4, name: Technology.OPEN_SHIFT},
-        {experienceRate: 3, name: Technology.K8S},
+        {experienceRate: 2.8, name: Technology.K8S},
         {experienceRate: 3, name: Technology.BAMBOO},
-        {experienceRate: 4, name: Technology.KAFKA},
+        {experienceRate: 4.5, name: Technology.KAFKA},
         {experienceRate: 2.5, name: Technology.RABBIT_MQ},
         {experienceRate: 5, name: "Blue green deployment"},
         {experienceRate: 5, name: "Monitoring"},
         {experienceRate: 5, name: Technology.PROMETHEUS},
         {experienceRate: 3.5, name: Technology.GITLAB},
         {experienceRate: 3.5, name: Technology.GITHUB},
-        {experienceRate: 3.5, name: Technology.BITBUCKET},
-
+        {experienceRate: 4.5, name: Technology.BITBUCKET},
       ]
     },
     {
@@ -112,9 +107,9 @@ export class ToolsComponent {
     {
       'title': 'Data types', 'tools': [
         {experienceRate: 5, name: Technology.JSON},
-        {experienceRate: 3.5, name: Technology.YAML},
-        {experienceRate: 3.5, name: "CSV"},
-        {experienceRate: 4.5, name: Technology.XML}]
+        {experienceRate: 5, name: Technology.YAML},
+        {experienceRate: 5, name: "CSV"},
+        {experienceRate: 5, name: Technology.XML}]
     },
     {
       'title': 'Programming techniques / tools', 'tools': [
@@ -143,8 +138,8 @@ export class ToolsComponent {
         {experienceRate: 5, name: ApplicationArchitecture.LAYERED_ARCHITECTURE},
         {experienceRate: 5, name: ApplicationArchitecture.HEXAGONAL_ARCHITECTURE},
         {experienceRate: 5, name: ApplicationArchitecture.PIPE_AND_FILTERS},
-        {experienceRate: 4, name: ApplicationArchitecture.MICRO_CARNAL},
-        {experienceRate: 4, name: ApplicationArchitecture.CQRS},
+        {experienceRate: 4.5, name: ApplicationArchitecture.MICRO_CARNAL},
+        {experienceRate: 5, name: ApplicationArchitecture.CQRS},
       ]
     },
     {
@@ -173,6 +168,7 @@ export class ToolsComponent {
         {experienceRate: 4, name: "Linux"},
         {experienceRate: 4, name: "MacOsx"},
         {experienceRate: 4.5, name: "InteliJ"},
+        {experienceRate: 1, name: "AI"},
       ]
     }
   ];
