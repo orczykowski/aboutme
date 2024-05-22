@@ -167,6 +167,7 @@ export class ToolsComponent {
         {experienceRate: 4, name: "Linux"},
         {experienceRate: 4, name: "MacOsx"},
         {experienceRate: 4.5, name: "InteliJ"},
+        {experienceRate: 1, name: "AI"},
       ]
     }
   ];
