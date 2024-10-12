@@ -40,6 +40,8 @@ export class ToolsComponent {
         {experienceRate: 5, name: Technology.OPEN_FEIGN},
         {experienceRate: 4, name: Technology.SLEUTH},
         {experienceRate: 5, name: Technology.MICRO_METER},
+        {experienceRate: 2.5, name: "Camel"},
+        {experienceRate: 3.5, name: "multi threading"}
       ]
     },
     {
@@ -168,7 +170,7 @@ export class ToolsComponent {
         {experienceRate: 4, name: "Linux"},
         {experienceRate: 4, name: "MacOsx"},
         {experienceRate: 4.5, name: "InteliJ"},
-        {experienceRate: 1, name: "AI"},
+        {experienceRate: 3, name: "AI tools  / chat gpt"},
       ]
     }
   ];
