@@ -15,8 +15,8 @@ export class JobRepository {
       {
         companyName: "University of Adama Mickiewicz in Poznań",
         position: "Lecture",
-        begin: new Date("2015-02-01"),
-        end: new Date("2013-07-01"),
+        begin: new Date("2013-09-01"),
+        end: new Date("2015-02-01"),
         mainTechnologies: [],
         otherTechnologies: [],
         methodologies: [],
