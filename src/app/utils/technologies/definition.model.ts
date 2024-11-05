@@ -83,8 +83,9 @@ enum Technology {
   THYMELEAF = "thymeleaf",
   MAVEN = "maven",
   GRADLE = "gradle",
-  NPM = "mpn",
+  NPM = "npm",
   BITBUCKET = "bitbucket",
+  SPLUNK = "Splunk",
 
 }
 

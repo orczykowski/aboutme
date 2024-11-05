@@ -261,9 +261,9 @@ export class JobRepository {
         position: "technical leader",
         begin: new Date("2023-09-15"),
         mainTechnologies:
-          [Technology.JAVA, Technology.SPRING, Technology.SPRING_TEST, Technology.ANGULAR
+          [Technology.JAVA, Technology.SPRING, Technology.SPRING_TEST, Technology.SPRING, Technology.SPRING_BOOT, Technology.ANGULAR
           ],
-        otherTechnologies: [Technology.EUREKA, Technology.K8S, Technology.MAVEN, Technology.GRADLE, Technology.ORACLE],
+        otherTechnologies: [Technology.EUREKA, Technology.K8S, Technology.MAVEN, Technology.GRADLE, Technology.ORACLE, Technology.GRAFANA, Technology.SPLUNK, Technology.KAFKA, Technology.EUREKA, Technology.JENKINS, Technology.BITBUCKET],
         methodologies: [Methodology.SCRUM],
         mainResponsibilities: [
           "Design and development of both backend and frontend functionality",
