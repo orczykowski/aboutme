@@ -40,5 +40,10 @@ label {
   overflow: clip;
 }
 
+ol, ul{
+list-style-type:  square;
+  padding: 10px 20px;
+}
+
 
 

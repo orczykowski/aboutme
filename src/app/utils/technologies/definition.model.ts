@@ -86,6 +86,7 @@ enum Technology {
   NPM = "npm",
   BITBUCKET = "bitbucket",
   SPLUNK = "Splunk",
+  CLOUDFLARE = "cloudflare"
 
 }
 

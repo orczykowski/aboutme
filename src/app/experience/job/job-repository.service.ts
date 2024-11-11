@@ -21,12 +21,14 @@ export class JobRepository {
         otherTechnologies: [],
         methodologies: [],
         mainResponsibilities: [
-          "giving a lecture to students",
-          "conducting laboratory classes for students",
-          "development of course materials"],
-        additionalResponsibilities: ["final knowledge verification and assessment"],
+          "conducting lectures",
+          "conducting labs and exercises classes for students",
+          "developed lectures and prepared supporting materials",
+          "Conducting the final evaluation of students"
+        ],
+        additionalResponsibilities: [],
         applicationArchitectures: [],
-        description: "Cooperation with the university was established through Allegro. As part of the internal recruitment, I managed to qualify as a lecturer."
+        description: "Cooperation with the university was established through Allegro. I prepared and delivered lectures, exercises, labs, and seminars for students. I was responsible for developing teaching materials, administering exams, and assessing students' progress."
       },
       {
         companyName: "Allegro",
@@ -57,24 +59,28 @@ export class JobRepository {
           Methodology.KANBAN,
           Methodology.XP],
         mainResponsibilities: [
-          "software development",
-          "creating automated tests",
-          "monitoring and maintenance of the developed software",
-          "taking care of the high quality of the code / solutions",
+          "software development - backend, frontend, big data",
+          "optimizing the performance of applications",
           "design system/application architecture",
+          "creating automated tests at all levels (from units to e2e)",
+          "creating monitoring",
+          "analysis and performance optimization of databases (and application pages), data design",
+          "api design and developing",
+          "maintenance of the developed software",
+          "taking care of the high quality of the code, application design and solutions",
+          "creating tools using Big Data technologies",
           "documenting solutions",
+          "ensuring High Code and Solution quality",
           "code review",
           "develop R&D / POC concepts",
-          "api design",
-          "business support in decision making (in the technological aspect)"
+          "business support in decision making"
         ],
         additionalResponsibilities: [
           "conducting internal trainings and workshops",
           "conducting technical interviews in the process of recruiting new employees",
           "participation as a mentor in hackathons organized by Allegro",
-          "introducing and supporting new employees to the team",
           "24/7 duty over applications",
-          "onboarding new team mates"
+          "onboarding new team members"
         ],
         applicationArchitectures: [
           ApplicationArchitecture.LAYERED_ARCHITECTURE,
@@ -83,11 +89,15 @@ export class JobRepository {
           ApplicationArchitecture.HEXAGONAL_ARCHITECTURE,
           ApplicationArchitecture.PIPE_AND_FILTERS,],
         systemArchitecture: SystemArchitecture.MICROSERVICES,
-        description: "Largest e-commerce platform in Eastern Europe. Platform built with 1k+ microservices. I developed the area of finance, product, and post-purchasing (delivery)."
+        description: "Allegro is one of the largest e-commerce platforms in Eastern Europe, built on a foundation of over 1,000 microservices. I contributed to the development of products across several areas, including:" +
+          "<br/> - <i>Product Area</i>: Developed platforms (such as the Allegro Brands Zone) and tools for sellers to facilitate easier integration with Allegro, automate tasks, and enhance service professionalism." +
+          "<br/> - <i>Finance Area</i>: Created systems responsible for managing purchase and commission refunds, developed the billing system for the entire platform, and built reporting tools." +
+          "<br/> - <i>Delivery Area</i>: Worked on integrations with carriers, implemented package tracking with multi-channel user notifications, and participated in the Allegro SMART program." +
+          "<br/> - <i>Other Projects</i>: Engaged in a project to predict price distribution based on demand (although due to legal reasons, this project was never deployed to the production environment)."
       },
       {
         companyName: "B2B Network",
-        position: "SENIOR JAVA DEVELOPER / LEADER",
+        position: "SENIOR JAVA DEVELOPER / TEAM LEADER",
         begin: new Date("2019-06-01"),
         end: new Date("2019-12-31"),
         mainTechnologies: [Technology.JAVA, Technology.GROOVY, Technology.SPRING, Technology.SPRING_DATA, Technology.SPRING_SECURITY, Technology.O_AUTH2,
@@ -96,68 +106,83 @@ export class JobRepository {
         otherTechnologies: [Technology.GIT, Technology.AWS],
         methodologies: [Methodology.AGILE, Methodology.KANBAN, Methodology.XP],
         mainResponsibilities: [
-          "implementation of functionality on the backend and frontend side",
-          "creating automated tests (unit, integration test)",
+          "software development - backend and frontend",
           "design system/application architecture",
-          "documenting solutions",
-          "api design",
+          "creating automated tests (unit, integration test)",
+          "api design and developing",
+          "taking care of the high quality of the code, application design and solutions",
           "code review",
+          "analysis and decision-making regarding the technologies used",
           "support team members during self-development",
           "negotiating the scope and deadlines of work with the business"
         ],
         additionalResponsibilities: [
           "conducting internal trainings and workshops",
-          "organization of usability tests with potential users",
-          "business support in designing functionalities",
+          "design and conducting of usability tests with potential users",
+          "business support in designing functionalities and in decision making",
           "conducting technical interviews in the process of recruiting new employees",
+          "task prioritization management",
+          "supporting the development of team members",
+          "team composition management"
         ],
         applicationArchitectures: [
           ApplicationArchitecture.HEXAGONAL_ARCHITECTURE,
           ApplicationArchitecture.MVC],
         systemArchitecture: SystemArchitecture.MICRO_MONOLITH,
-        description: "Internal project. Creating an application that allows you to manage the entire testing process, starting from the creation of test cases, through reporting the test progress, reporting errors, to automatic test launch."
+        description: "Internal project. Create a competitive system for managing the entire software testing process, starting from defining test cases, running various types of tests, aggregating " +
+          "and presenting results (reports, trends, analyses), to managing bugs. The goal of the application was to increase the security, auditability, and speed of the flawed software testing process."
 
       },
       {
         companyName: "Empik",
-        position: "Architect",
+        position: "Architect - hands on ",
         begin: new Date("2020-01-01"),
         end: new Date("2020-12-31"),
         mainTechnologies: [Technology.JAVA, Technology.GROOVY, Technology.KOTLIN,
-          Technology.SPRING, Technology.SPRING_DATA, Technology.SPRING_SECURITY, Technology.O_AUTH2, Technology.JSON, Technology.YAML, Technology.SQL,
-          Technology.SPRING_BOOT, Technology.SPOCK, Technology.SPRING_TEST, Technology.GRAPH_QL, Technology.OPEN_FEIGN, Technology.MAVEN, Technology.GRADLE],
-        otherTechnologies: [Technology.CSS, Technology.HTML, Technology.GIT, Technology.ORACLE, Technology.NPM,
-          Technology.KIBANA, Technology.HAZELCAST, Technology.REACT, Technology.GRAFANA, Technology.PROMETHEUS, Technology.JENKINS],
+          Technology.SPRING, Technology.SPRING_DATA, Technology.SPRING_SECURITY,
+          Technology.O_AUTH2, Technology.JSON, Technology.YAML, Technology.SQL,
+          Technology.SPRING_BOOT, Technology.SPOCK, Technology.SPRING_TEST,
+          Technology.GRAPH_QL, Technology.OPEN_FEIGN, Technology.MAVEN, Technology.GRADLE],
+        otherTechnologies: [Technology.CSS, Technology.HTML, Technology.GIT, Technology.ORACLE, Technology.NPM, Technology.CLOUDFLARE, Technology.K8S, Technology.LOMBOK,
+          Technology.KIBANA, Technology.HAZELCAST, Technology.REACT, Technology.GRAFANA, Technology.PROMETHEUS, Technology.JENKINS, Technology.KAFKA],
         methodologies: [Methodology.AGILE, Methodology.SCRUM, Methodology.SAFE],
         mainResponsibilities: [
-          "software development",
-          "creating automated tests",
+          "software development - backend and fronted",
           "design system/application architecture",
           "monitoring and maintenance of the developed software",
-          "taking care of the high quality of the code / solutions",
+          "participating in the implementation of each application (particularly the GraphQL facade)",
+          "implementation of changes in existing systems and infrastructure",
+          "creating a solution to monitor the achievement of business and technical goals",
+          "creating automated tests",
+          "taking care of the high quality of the code, application design and solutions",
           "documenting solutions",
           "code review",
           "develop R&D / POC concepts",
           "api design",
           "business support in decision making (in the technological aspect)",
-          "support of various teams in making architectural decisions"
+          "support of various teams in making architectural decisions",
         ],
         additionalResponsibilities: [
           "creating a complete on-boarding process from scratch",
           "participation in meetings determining the shape of the system architecture / method of integration",
           "support for planning technological debt reduction"
-
         ],
         applicationArchitectures: [
           ApplicationArchitecture.HEXAGONAL_ARCHITECTURE,
           ApplicationArchitecture.MVC,],
         systemArchitecture: SystemArchitecture.MICROSERVICES,
-        description: "The aim of the project was to increase the speed of the \"product card\". As part of the project, the following were created:" +
-          "<br/>BFF - façade using graphQL that allows you to dynamically pull data\n" +
-          "<br/>CMS - a system that allows you to define rules depending on various business rules that influenced the displayed content\n" +
-          "<br/>SSR App - a consumer of the two previous apps, a view pre-renderer app for the client\n" +
-          "<br/>Frontend app - rewritten application presenting product data," +
-          "<br/>Monitoring allowing for continuous verification of business goals"
+        description: "The goal of the project was to optimize the performance of the product page and the speed of presenting the full offer. The first stage of the project involved defining both " +
+          "technical and business metrics, as well as methods for collecting and presenting them. " +
+          "The metrics were gathered through an additional application that measured the performance of competing websites. " +
+          "To ensure easy accessibility, the metrics were presented in Grafana on a dedicated dashboard. The second stage focused on " +
+          "technology selection (R&D) and a detailed analysis of risks and opportunities. " +
+          "Next, a system was designed consisting of several services, along with a facade using GraphQL as the API." +
+          "Applications created as part of the implementation: " +
+          "<br/> - BFF - facade using graphQL that allows you to dynamically pull data from several services" +
+          "<br/> - CMS - a system that allows you to define rules depending on various business rules that influenced the displayed content" +
+          "<br/> - SSR App - a consumer of the two previous apps, a view pre-renderer app for the client to reduce response time" +
+          "<br/> - Frontend app - rewritten application presenting product data," +
+          "<br/> - Monitoring allowing for continuous verification of business goals"
       },
       {
         companyName: "Apreel / Nationale Nederlanden",
@@ -175,15 +200,17 @@ export class JobRepository {
           Technology.GIT, Technology.MS_SQL, Technology.KAFKA],
         methodologies: [Methodology.AGILE, Methodology.SCRUM, Methodology.SAFE],
         mainResponsibilities: [
-          "software development",
-          "creating automated tests",
+          "software development - backend and frontend",
+          "creating automated tests (all level unit, integration, e2e)",
           "design system/application architecture",
+          "design and optimization of data and database usage",
           "monitoring and maintenance of the developed software",
-          "taking care of the high quality of the code / solutions",
+          "taking care of the high quality of the code, application design and solutions",
           "documenting solutions",
           "code review",
           "develop R&D / POC concepts",
-          "api design",
+          "api design and development",
+          "design CI/CD"
         ],
         additionalResponsibilities: [
           "participation in a company-wide (international) program aimed at increasing the number of employed engineers and improving their working conditions in order to increase their retention.",
@@ -193,10 +220,15 @@ export class JobRepository {
           ApplicationArchitecture.MVC,
           ApplicationArchitecture.LAYERED_ARCHITECTURE],
         systemArchitecture: SystemArchitecture.MICROSERVICES,
-        description: "Body leasing to the insurance (Nationale Nederlanden) company. Working as developer in the area of claim reporting and out payments. Rewriting old applications to a  microservices architecture with new tech stack"
+        description: "Body leasing to the insurance (Nationale Nederlanden) company.The project in the area of claims reporting aimed to develop a modern system to optimize and automate the entire claims management process. The key objectives of the project included:" +
+          "<br/> - High availability" +
+          "<br/> - Process automation: Selected stages of the claims handling process were automated to reduce the time required to process claims and to minimize the need for manual execution of routine tasks. As a result, the system can independently assign cases to appropriate staff, update claim statuses, and inform customers about the progress of their cases.\n" +
+          "<br/> - Integration of various solutions: The system was designed to integrate with other systems, such as insurance systems, customer communication tools, and external databases (e.g., insurance history databases). These connections allow real-time data exchange, which streamlines the entire claims handling process." +
+          "<br/> - Single source of truth**: The system serves as a central repository of information on the claim’s status, eliminating discrepancies. This ensures that both employees and customers have access to up-to-date and consistent information about each stage of the claims process.\n" +
+          "This project increased the efficiency and speed of claims handling, improved process transparency, and enhanced customer satisfaction by providing quick access to information on the status of their claims."
       },
       {
-        companyName: "Nationale nederlanden",
+        companyName: "Nationale Nederlanden",
         position: "Software engineering lead",
         begin: new Date("2022-02-01"),
         end: new Date("2023-06-01"),
@@ -211,41 +243,43 @@ export class JobRepository {
           Technology.GIT, Technology.MS_SQL, Technology.KAFKA, Technology.PITEST],
         methodologies: [Methodology.AGILE, Methodology.SCRUM, Methodology.SAFE],
         mainResponsibilities: [
+          "software development - backend and frontend",
           "creating automated tests",
+          "support of various teams in making architectural decisions",
+          "participation in meetings determining the shape of the system architecture / method of integration",
+          "support for planning technological debt reduction",
           "design system/application architecture",
           "monitoring and maintenance of the developed software",
-          "taking care of the high quality of the code / solutions",
+          "taking care of the high quality of the code, application design and solutions",
           "documenting solutions",
           "code review",
           "develop R&D / POC concepts",
           "api design",
           "business support in decision making (in the technological aspect)",
-          "support of various teams in making architectural decisions",
-          "participation in meetings determining the shape of the system architecture / method of integration",
-          "support for planning technological debt reduction"
-
+          "support for team members' development and evaluating their progress."
         ],
         additionalResponsibilities: [
           "participation in a program aimed at creating / strengthening the engineering culture (NN Poland).",
-          "onboarding new team mates",
+          "onboarding new team members",
         ],
         applicationArchitectures: [
           ApplicationArchitecture.HEXAGONAL_ARCHITECTURE,
           ApplicationArchitecture.MVC, ApplicationArchitecture.HEXAGONAL_ARCHITECTURE, ApplicationArchitecture.LAYERED_ARCHITECTURE],
         systemArchitecture: SystemArchitecture.MICROSERVICES,
-        description: "Working as developer in the area of claim reporting and out payments. Rewriting old applications to a  microservices architecture with new tech stack"
+        description: "Direct transition to Nationale Nederlanden. Continued work on the claims reporting and management system as a Tech Leader."
       },
       {
         companyName: "Smartfrigo",
         position: "developer",
         begin: new Date("2010-07-01"),
         end: new Date("2011-12-31"),
-        mainTechnologies: [Technology.PHP, Technology.HTML, Technology.XML, Technology.HTML, Technology.CSS],
-        otherTechnologies: [],
+        mainTechnologies: [Technology.PHP, Technology.JAVA_SCRIPT, Technology.HTML, Technology.XML, Technology.HTML, Technology.CSS],
+        otherTechnologies: [Technology.SVN],
         methodologies: [],
         mainResponsibilities: [
           "design, creating backend and frontend functionalists",
           "design system/application architecture",
+          "data design",
           "testing application",
         ],
         additionalResponsibilities: ["Support founders with design functionalities"],
@@ -257,32 +291,42 @@ export class JobRepository {
       },
 
       {
-        companyName: "J-laabs - Brown Brothers Harriman",
+        companyName: "J-laabs - Brown Brothers Harriman (BBH)",
         position: "technical leader",
         begin: new Date("2023-09-15"),
         mainTechnologies:
-          [Technology.JAVA, Technology.SPRING, Technology.SPRING_TEST, Technology.SPRING, Technology.SPRING_BOOT, Technology.ANGULAR
+          [Technology.JAVA, Technology.TYPE_SCRIPT, Technology.SPRING, Technology.SPRING_TEST, Technology.SPRING, Technology.SPRING_BOOT,
+            Technology.ANGULAR
           ],
         otherTechnologies: [Technology.EUREKA, Technology.K8S, Technology.MAVEN, Technology.GRADLE, Technology.ORACLE, Technology.GRAFANA, Technology.SPLUNK, Technology.KAFKA, Technology.EUREKA, Technology.JENKINS, Technology.BITBUCKET],
         methodologies: [Methodology.SCRUM],
         mainResponsibilities: [
-          "Design and development of both backend and frontend functionality",
-          "Designing the architecture of both the system and the application",
-          "Refactoring - rewriting inefficient parts of the application / coordinating activities",
-          "Management i Coordination of team work",
-          "Technical debt management",
-          "Defining technical requirements",
-          "Education of team members",
-          "CICD creation/optimization",
-          "Creating documentation",
-          "Process standardization support"
+          "design and development - backend and frontend functionality",
+          "designing system and application architecture",
+          "refactoring - rewriting inefficient parts of the application / coordinating activities",
+          "performance optimization - improving application, database, and infrastructure performance to ensure scalability, efficiency, and responsiveness.",
+          "maintaining and monitoring applications in production",
+          "management and coordination of team work",
+          "technical debt management",
+          "defining technical requirements",
+          "supporting team members' development and evaluating their progress",
+          "redesigning and creating CI/CD pipelines",
+          "creating documentation",
+          "supporting process standardization",
+          "ensuring code quality and best practices",
+          "collaborating with cross-functional teams to deliver solutions",
+          "troubleshooting and resolving complex technical issues",
+          "driving continuous improvement in development processes",
         ],
-        additionalResponsibilities: [],
-        applicationArchitectures: [
-          ApplicationArchitecture.OTHER],
+        additionalResponsibilities: [
+          "participation in meetings determining the shape of the system architecture / method of integration",
+          "support for planning technological debt reduction",
+          "conducting technical interviews in the process of recruiting new employees"
+        ],
+        applicationArchitectures: [ApplicationArchitecture.OTHER, ApplicationArchitecture.LAYERED_ARCHITECTURE],
         systemArchitecture: SystemArchitecture.MONOLITH,
         description:
-          "Work at a BBH client, on the client's internal system"
+          "Work at a BBH client, on the client's internal system. Development and maintenance of a system that enables processing, transforming, and analyzing documents."
       },
     ].sort((job1: JobInfo, job2: JobInfo) => this.compare(job1, job2));
   }
