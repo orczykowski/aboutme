@@ -1,8 +1,11 @@
 <div class="tool-list">
-  <h3>{{title}}</h3>
-  <div *ngFor="let tool of tools">
-    <span>{{tool.name}}</span>
-    <app-rating [rating]="tool.experienceRate"></app-rating>
-  </div>
+  <h3>{{ title }}</h3>
+  @for (tool of tools; track tool) {
+    <div>
+      <span>{{ tool.name }}</span>
+      <app-rating [rating]="tool.experienceRate"></app-rating>
+    </div>
+  }
+
 </div>
 

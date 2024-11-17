@@ -1,8 +1,10 @@
 <div class="technology">
-  <h4>{{title}}:</h4>
+  <h4>{{ title }}:</h4>
   [
-  <div *ngFor="let technology of technologies">
-    <span>{{technology |  lowercase }}</span>,
-  </div>
+  @for (technology of technologies; track technology) {
+    <div>
+      <span>{{ technology |  lowercase }}</span>,
+    </div>
+  }
   ]
 </div>

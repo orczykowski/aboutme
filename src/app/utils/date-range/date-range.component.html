@@ -1,6 +1,10 @@
 <div class="date-range">
-  (<span>{{dateFrom| date: 'dd-MM-yyyy'}}</span>
+  (<span>{{ dateFrom| date: 'dd-MM-yyyy' }}</span>
   -
-  <span *ngIf="dateTo; else elseBlock">{{dateTo | date: 'dd-MM-yyyy'}}</span>
-  <ng-template #elseBlock><span class="current">current</span></ng-template>)
+  @if (dateTo) {
+    <span>{{ dateTo | date: 'dd-MM-yyyy' }}</span>
+  } @else {
+    <ng-template><span class="current">current</span></ng-template>
+  }
+  )
 </div>

@@ -3,46 +3,63 @@
   <div>
     <div>
       <div class="main-info">
-        <p class="position">{{jobInfo?.position}}</p>
-        <p class="company-name">{{jobInfo?.companyName}}
+        <p class="position">{{ jobInfo?.position }}</p>
+        <p class="company-name">{{ jobInfo?.companyName }}
           <date-range [dateFrom]=jobInfo?.begin [dateTo]=jobInfo?.end></date-range>
         </p>
-        <p class="description" *ngIf="jobInfo?.description" [innerHTML]="jobInfo?.description">
-          <label>Business are description:</label>
-          {{jobInfo?.description}}
-        </p>
+        @if (jobInfo?.description) {
+          <p class="description" [innerHTML]="jobInfo?.description">
+            <label>Business are description:</label>
+            {{ jobInfo?.description }}
+          </p>
+        }
       </div>
-      <p *ngIf="jobInfo?.mainTechnologies?.length != 0">
-        <label>Methodologies:</label>
-        <span class="methodology"
-              *ngFor="let methodology of jobInfo?.methodologies">{{methodology | lowercase}}, </span>
-      </p>
-      <p *ngIf="jobInfo?.systemArchitecture">
-        <label>System architecture:</label>
-        <span>{{jobInfo?.systemArchitecture}}</span>
-      </p>
-      <p *ngIf="jobInfo?.applicationArchitectures?.length != 0">
-        <label>Application architectures:</label>
-        <span class="methodology"
-              *ngFor="let architecture of jobInfo?.applicationArchitectures">{{architecture | lowercase}}, </span>
-      </p>
+      @if (jobInfo?.mainTechnologies?.length != 0) {
+        <p>
+          <label>Methodologies:</label>
+          @for (methodology of jobInfo?.methodologies; track methodology) {
+            <span class="methodology">{{ methodology | lowercase }}, </span>
+          }
+        </p>
+      }
+      @if (jobInfo?.systemArchitecture) {
+        <p>
+          <label>System architecture:</label>
+          <span>{{ jobInfo?.systemArchitecture }}</span>
+        </p>
+      }
+      @if (jobInfo?.applicationArchitectures?.length != 0) {
+        <p>
+          <label>Application architectures:</label>
+          @for (architecture of jobInfo?.applicationArchitectures; track architecture) {
+            <span class="methodology">{{ architecture | lowercase }}, </span>
+          }
+        </p>
+      }
+
     </div>
     <div class="main-responsibilities">
       <h3>Responsibilities:</h3>
       <h4>main:</h4>
       <ul>
-        <li *ngFor="let responsibility of jobInfo?.mainResponsibilities;">{{responsibility}}</li>
+        @for (responsibility of jobInfo?.mainResponsibilities; track responsibility) {
+          <li>{{ responsibility }}</li>
+        }
       </ul>
       <h4>additional:</h4>
       <ul>
-        <li *ngFor="let responsibility of jobInfo?.additionalResponsibilities;">{{responsibility}}</li>
+        @for (responsibility of jobInfo?.additionalResponsibilities; track responsibility) {
+          <li>{{ responsibility }}</li>
+        }
       </ul>
     </div>
-    <div class="technologies" *ngIf="jobInfo?.mainTechnologies?.length != 0">
-      <h3>Used technologies:</h3>
-      <app-technologies [title]="'main'" [technologies]=jobInfo?.mainTechnologies></app-technologies>
-      <app-technologies [title]="'additional'" [technologies]=jobInfo?.otherTechnologies></app-technologies>
-    </div>
+    @if (jobInfo?.mainTechnologies?.length != 0) {
+      <div class="technologies">
+        <h3>Used technologies:</h3>
+        <app-technologies [title]="'main'" [technologies]=jobInfo?.mainTechnologies></app-technologies>
+        <app-technologies [title]="'additional'" [technologies]=jobInfo?.otherTechnologies></app-technologies>
+      </div>
+    }
   </div>
   &#125;;
 </div>
