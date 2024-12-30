@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, input} from '@angular/core';
 
 @Component({
   selector: 'date-range',
@@ -7,10 +7,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class DateRangeComponent {
 
-  @Input()
-  dateFrom?: Date
 
-  @Input()
-  dateTo?: Date
+  dateFrom = input<Date>()
 
+  dateTo = input<Date>()
 }

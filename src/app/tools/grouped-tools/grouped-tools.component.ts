@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {ToolDefinition} from "../tool-model";
 
 
@@ -8,10 +8,8 @@ import {ToolDefinition} from "../tool-model";
   styleUrls: ['./grouped-tools.component.css']
 })
 export class GroupedToolsComponent {
-  @Input()
-  title: string = "tools"
 
-  @Input()
-  tools: ToolDefinition[] = []
+  title = input<string>("tools")
+  tools = input<ToolDefinition[]>()
 }
 

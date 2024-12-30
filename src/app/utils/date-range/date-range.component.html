@@ -1,8 +1,8 @@
 <div class="date-range">
-  (<span>{{ dateFrom| date: 'dd-MM-yyyy' }}</span>
+  (<span>{{ dateFrom()| date: 'dd-MM-yyyy' }}</span>
   -
-  @if (dateTo) {
-    <span>{{ dateTo | date: 'dd-MM-yyyy' }}</span>
+  @if (dateTo()) {
+    <span>{{ dateTo() | date: 'dd-MM-yyyy' }}</span>
   } @else {
     <ng-template><span class="current">current</span></ng-template>
   }

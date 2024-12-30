@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {Component, ElementRef, input, OnInit, Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-rating',
@@ -8,8 +8,7 @@ import {Component, ElementRef, Input, OnInit, Renderer2, ViewChild} from '@angul
 export class RatingComponent implements OnInit {
   private static MAX_SCORE = 5;
 
-  @Input()
-  rating: number = 0;
+  rating = input.required<number>();
   private elementWidth: number = 66;
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {
@@ -22,7 +21,7 @@ export class RatingComponent implements OnInit {
   }
 
   private calculateVisibleScore(): string {
-    return (this.rating / RatingComponent.MAX_SCORE) * this.elementWidth + "px";
+    return (this.rating() / RatingComponent.MAX_SCORE) * this.elementWidth + "px";
   }
 
 }

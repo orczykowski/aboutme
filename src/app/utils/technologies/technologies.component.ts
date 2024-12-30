@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {Technology} from "./definition.model";
 
 @Component({
@@ -8,10 +8,8 @@ import {Technology} from "./definition.model";
 })
 export class TechnologiesComponent {
 
-  @Input()
-  title: string = "technologies";
+  title = input<string>();
 
-  @Input()
-  technologies?: Technology[];
+  technologies = input<Technology[]>();
 
 }

@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {JobInfo} from "./job.model";
 
 @Component({
@@ -7,8 +7,5 @@ import {JobInfo} from "./job.model";
   styleUrls: ['./job.component.css']
 })
 export class JobComponent {
-
-  @Input()
-  jobInfo?: JobInfo
-
+  jobInfo = input.required<JobInfo>()
 }

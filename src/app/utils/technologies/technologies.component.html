@@ -1,7 +1,7 @@
 <div class="technology">
-  <h4>{{ title }}:</h4>
+  <h4>{{ title() }}:</h4>
   [
-  @for (technology of technologies; track technology) {
+  @for (technology of technologies(); track technology) {
     <div>
       <span>{{ technology |  lowercase }}</span>,
     </div>

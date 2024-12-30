@@ -3,35 +3,35 @@
   <div>
     <div>
       <div class="main-info">
-        <p class="position">{{ jobInfo?.position }}</p>
-        <p class="company-name">{{ jobInfo?.companyName }}
-          <date-range [dateFrom]=jobInfo?.begin [dateTo]=jobInfo?.end></date-range>
+        <p class="position">{{ jobInfo().position }}</p>
+        <p class="company-name">{{ jobInfo().companyName }}
+          <date-range [dateFrom]=jobInfo().begin [dateTo]=jobInfo().end></date-range>
         </p>
-        @if (jobInfo?.description) {
-          <p class="description" [innerHTML]="jobInfo?.description">
+        @if (jobInfo().description) {
+          <p class="description" [innerHTML]="jobInfo().description">
             <label>Business are description:</label>
-            {{ jobInfo?.description }}
+            {{ jobInfo().description }}
           </p>
         }
       </div>
-      @if (jobInfo?.mainTechnologies?.length != 0) {
+      @if (jobInfo().mainTechnologies?.length != 0) {
         <p>
           <label>Methodologies:</label>
-          @for (methodology of jobInfo?.methodologies; track methodology) {
+          @for (methodology of jobInfo().methodologies; track methodology) {
             <span class="methodology">{{ methodology | lowercase }}, </span>
           }
         </p>
       }
-      @if (jobInfo?.systemArchitecture) {
+      @if (jobInfo().systemArchitecture) {
         <p>
           <label>System architecture:</label>
-          <span>{{ jobInfo?.systemArchitecture }}</span>
+          <span>{{ jobInfo().systemArchitecture }}</span>
         </p>
       }
-      @if (jobInfo?.applicationArchitectures?.length != 0) {
+      @if (jobInfo().applicationArchitectures?.length != 0) {
         <p>
           <label>Application architectures:</label>
-          @for (architecture of jobInfo?.applicationArchitectures; track architecture) {
+          @for (architecture of jobInfo().applicationArchitectures; track architecture) {
             <span class="methodology">{{ architecture | lowercase }}, </span>
           }
         </p>
@@ -42,22 +42,22 @@
       <h3>Responsibilities:</h3>
       <h4>main:</h4>
       <ul>
-        @for (responsibility of jobInfo?.mainResponsibilities; track responsibility) {
+        @for (responsibility of jobInfo().mainResponsibilities; track responsibility) {
           <li>{{ responsibility }}</li>
         }
       </ul>
       <h4>additional:</h4>
       <ul>
-        @for (responsibility of jobInfo?.additionalResponsibilities; track responsibility) {
+        @for (responsibility of jobInfo().additionalResponsibilities; track responsibility) {
           <li>{{ responsibility }}</li>
         }
       </ul>
     </div>
-    @if (jobInfo?.mainTechnologies?.length != 0) {
+    @if (jobInfo().mainTechnologies.length != 0) {
       <div class="technologies">
         <h3>Used technologies:</h3>
-        <app-technologies [title]="'main'" [technologies]=jobInfo?.mainTechnologies></app-technologies>
-        <app-technologies [title]="'additional'" [technologies]=jobInfo?.otherTechnologies></app-technologies>
+        <app-technologies [title]="'main'" [technologies]=jobInfo().mainTechnologies></app-technologies>
+        <app-technologies [title]="'additional'" [technologies]=jobInfo().otherTechnologies></app-technologies>
       </div>
     }
   </div>
