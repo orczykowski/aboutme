@@ -28,6 +28,10 @@ export class MenuComponent {
   }
 
   hideMenu(): void {
+    const checkbox = this.isMenuVisible();
+    if (checkbox) {
+      checkbox.nativeElement.checked = false;
+    }
     this.menuService.hideMenu();
   }
 }
