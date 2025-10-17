@@ -1,17 +1,22 @@
-import {ElementRef, EventEmitter, Injectable, Output, ViewChild} from '@angular/core';
+import {Injectable, signal} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
 
-  @Output() menuVisibility = new EventEmitter<boolean>();
+  // Signal-based state management (Angular 20 feature)
+  menuVisibility = signal<boolean>(false);
 
   showMenu() {
-    this.menuVisibility.emit(true);
+    this.menuVisibility.set(true);
   }
 
   hideMenu() {
-    this.menuVisibility.emit(false);
+    this.menuVisibility.set(false);
+  }
+
+  toggleMenu() {
+    this.menuVisibility.update(value => !value);
   }
 }

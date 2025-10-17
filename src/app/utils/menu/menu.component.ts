@@ -1,29 +1,33 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, effect, ElementRef, inject, viewChild} from '@angular/core';
 import {MenuService} from "./menu.service";
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.css'],
+  standalone: true,
+  imports: [RouterLink]
 })
-export class MenuComponent implements OnInit {
-  @ViewChild('menuVisibilityCheckbox') isMenuVisible!: ElementRef;
+export class MenuComponent {
+  // Signal-based viewChild query (Angular 20 feature)
+  isMenuVisible = viewChild<ElementRef>('menuVisibilityCheckbox');
+
   googleDocsCvLink ="https://docs.google.com/document/d/1QV6UIbGRE4uAxSeMLk8Pml2d9Esw4wX6J-UcEPIkEys/edit?usp=sharing";
-  constructor(private menuService: MenuService) {
+
+  private menuService = inject(MenuService);
+
+  constructor() {
+    effect(() => {
+      const checkbox = this.isMenuVisible();
+      const isVisible = this.menuService.menuVisibility();
+      if (checkbox) {
+        checkbox.nativeElement.checked = isVisible;
+      }
+    });
   }
 
   hideMenu(): void {
-    this.setMenuVisibility(false);
+    this.menuService.hideMenu();
   }
-
-  ngOnInit(): void {
-    this.menuService
-      .menuVisibility
-      .subscribe(isVisible => this.setMenuVisibility(isVisible));
-  }
-
-  private setMenuVisibility(isVisible: boolean): void {
-    this.isMenuVisible.nativeElement.checked = isVisible;
-  }
-
 }

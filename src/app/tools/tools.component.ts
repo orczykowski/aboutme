@@ -1,11 +1,14 @@
 import {Component} from '@angular/core';
 import {ApplicationArchitecture, Methodology, SystemArchitecture, Technology} from "../utils/technologies/definition.model";
 import {ToolsSetDefinition} from "./tool-model";
+import {GroupedToolsComponent} from './grouped-tools/grouped-tools.component';
 
 @Component({
   selector: 'app-tools',
   templateUrl: './tools.component.html',
-  styleUrls: ['./tools.component.css']
+  styleUrls: ['./tools.component.css'],
+  standalone: true,
+  imports: [GroupedToolsComponent]
 })
 export class ToolsComponent {
 

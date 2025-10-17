@@ -1,15 +1,22 @@
-import {Component, ElementRef, ViewChild} from '@angular/core';
+import {Component, ElementRef, viewChild} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {MenuComponent} from './utils/menu/menu.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [RouterOutlet, MenuComponent]
 })
 export class AppComponent {
-  @ViewChild('menuVisibilityCheckbox') isMenuVisible!: ElementRef;
+  isMenuVisible = viewChild<ElementRef>('menuVisibilityCheckbox');
 
   hideMenu(): void {
-    this.isMenuVisible.nativeElement.checked = false;
+    const checkbox = this.isMenuVisible();
+    if (checkbox) {
+      checkbox.nativeElement.checked = false;
+    }
   }
 
 }
