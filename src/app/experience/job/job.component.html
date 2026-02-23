@@ -14,7 +14,7 @@
           </p>
         }
       </div>
-      @if (jobInfo().mainTechnologies?.length != 0) {
+      @if (jobInfo().mainTechnologies.length != 0) {
         <p>
           <label>Methodologies:</label>
           @for (methodology of jobInfo().methodologies; track methodology) {
@@ -28,7 +28,7 @@
           <span>{{ jobInfo().systemArchitecture }}</span>
         </p>
       }
-      @if (jobInfo().applicationArchitectures?.length != 0) {
+      @if (jobInfo().applicationArchitectures.length != 0) {
         <p>
           <label>Application architectures:</label>
           @for (architecture of jobInfo().applicationArchitectures; track architecture) {
