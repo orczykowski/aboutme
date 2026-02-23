@@ -9,9 +9,6 @@ import {DatePipe} from '@angular/common';
   imports: [DatePipe]
 })
 export class DateRangeComponent {
-
-
-  dateFrom = input<Date>()
-
-  dateTo = input<Date>()
+  dateFrom = input<Date>();
+  dateTo = input<Date>();
 }

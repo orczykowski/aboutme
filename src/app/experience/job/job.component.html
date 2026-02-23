@@ -3,61 +3,62 @@
   <div>
     <div>
       <div class="main-info">
-        <p class="position">{{ jobInfo().position }}</p>
-        <p class="company-name">{{ jobInfo().companyName }}
-          <date-range [dateFrom]=jobInfo().begin [dateTo]=jobInfo().end></date-range>
+        <p class="position" [innerHTML]="jobInfo().position | highlight:searchQuery()"></p>
+        <p class="company-name">
+          <span [innerHTML]="jobInfo().companyName | highlight:searchQuery()"></span>
+          <date-range [dateFrom]="jobInfo().begin" [dateTo]="jobInfo().end"></date-range>
         </p>
         @if (jobInfo().description) {
-          <p class="description" [innerHTML]="jobInfo().description">
-            <label>Business are description:</label>
-            {{ jobInfo().description }}
+          <p class="description" [innerHTML]="jobInfo().description | highlight:searchQuery()"></p>
+        }
+      </div>
+      <div class="metadata">
+        @if (jobInfo().methodologies.length !== 0) {
+          <p>
+            <label>Methodologies:</label>
+            @for (methodology of jobInfo().methodologies; track methodology; let last = $last) {
+              <span class="methodology" [innerHTML]="(methodology | lowercase) + (last ? '' : ', ') | highlight:searchQuery()"></span>
+            }
+          </p>
+        }
+        @if (jobInfo().systemArchitecture) {
+          <p>
+            <label>System architecture:</label>
+            <span [innerHTML]="jobInfo().systemArchitecture! | highlight:searchQuery()"></span>
+          </p>
+        }
+        @if (jobInfo().applicationArchitectures.length !== 0) {
+          <p>
+            <label>Application architectures:</label>
+            @for (architecture of jobInfo().applicationArchitectures; track architecture; let last = $last) {
+              <span class="methodology" [innerHTML]="(architecture | lowercase) + (last ? '' : ', ') | highlight:searchQuery()"></span>
+            }
           </p>
         }
       </div>
-      @if (jobInfo().mainTechnologies.length != 0) {
-        <p>
-          <label>Methodologies:</label>
-          @for (methodology of jobInfo().methodologies; track methodology) {
-            <span class="methodology">{{ methodology | lowercase }}, </span>
-          }
-        </p>
-      }
-      @if (jobInfo().systemArchitecture) {
-        <p>
-          <label>System architecture:</label>
-          <span>{{ jobInfo().systemArchitecture }}</span>
-        </p>
-      }
-      @if (jobInfo().applicationArchitectures.length != 0) {
-        <p>
-          <label>Application architectures:</label>
-          @for (architecture of jobInfo().applicationArchitectures; track architecture) {
-            <span class="methodology">{{ architecture | lowercase }}, </span>
-          }
-        </p>
-      }
-
     </div>
     <div class="main-responsibilities">
       <h3>Responsibilities:</h3>
       <h4>main:</h4>
       <ul>
         @for (responsibility of jobInfo().mainResponsibilities; track responsibility) {
-          <li>{{ responsibility }}</li>
+          <li [innerHTML]="responsibility | highlight:searchQuery()"></li>
         }
       </ul>
-      <h4>additional:</h4>
-      <ul>
-        @for (responsibility of jobInfo().additionalResponsibilities; track responsibility) {
-          <li>{{ responsibility }}</li>
-        }
-      </ul>
+      @if (jobInfo().additionalResponsibilities && jobInfo().additionalResponsibilities!.length > 0) {
+        <h4>additional:</h4>
+        <ul>
+          @for (responsibility of jobInfo().additionalResponsibilities; track responsibility) {
+            <li [innerHTML]="responsibility | highlight:searchQuery()"></li>
+          }
+        </ul>
+      }
     </div>
-    @if (jobInfo().mainTechnologies.length != 0) {
+    @if (jobInfo().mainTechnologies.length !== 0) {
       <div class="technologies">
         <h3>Used technologies:</h3>
-        <app-technologies [title]="'main'" [technologies]=jobInfo().mainTechnologies></app-technologies>
-        <app-technologies [title]="'additional'" [technologies]=jobInfo().otherTechnologies></app-technologies>
+        <app-technologies [title]="'main'" [technologies]="jobInfo().mainTechnologies" [searchQuery]="searchQuery()"></app-technologies>
+        <app-technologies [title]="'additional'" [technologies]="jobInfo().otherTechnologies" [searchQuery]="searchQuery()"></app-technologies>
       </div>
     }
   </div>

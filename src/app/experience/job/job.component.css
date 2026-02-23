@@ -7,7 +7,7 @@
 }
 
 .job div div {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .main-info {
@@ -17,12 +17,38 @@
 .main-info .position {
   color: var(--light-green);
   font-size: 1.2em;
+  margin-bottom: 0.2em;
 }
 
 .main-info .company-name {
   color: var(--green);
   font-size: 0.9em;
-  margin-bottom: 0.5em
+  margin-bottom: 0.8em;
+}
+
+.description {
+  font-weight: normal;
+  font-size: 0.85em;
+  line-height: 1.6;
+  color: #b0b0b0 !important;
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  border-left: 2px solid #3d3f41;
+}
+
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1.5em;
+  margin-top: 0.6em;
+  padding: 0.5em 0;
+  border-top: 1px solid #3d3f41;
+  border-bottom: 1px solid #3d3f41;
+}
+
+.metadata p {
+  margin: 0;
+  font-size: 0.85em;
 }
 
 h4, label {
@@ -40,10 +66,37 @@ label {
   overflow: clip;
 }
 
-ol, ul{
-list-style-type:  square;
-  padding: 10px 20px;
+.main-responsibilities {
+  margin-top: 0.5em;
 }
 
+.main-responsibilities h3 {
+  margin-bottom: 0.3em;
+}
 
+.main-responsibilities h4 {
+  font-size: 0.85em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
 
+ol, ul {
+  list-style-type: square;
+  padding: 4px 20px;
+}
+
+ul li {
+  font-size: 0.85em;
+  line-height: 1.5;
+  padding: 1px 0;
+}
+
+.technologies {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  border-top: 1px solid #3d3f41;
+}
+
+.technologies h3 {
+  margin-bottom: 0.2em;
+}

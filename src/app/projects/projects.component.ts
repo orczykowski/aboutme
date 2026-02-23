@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -7,11 +7,5 @@ import { Component, OnInit } from '@angular/core';
   standalone: true,
   imports: []
 })
-export class ProjectsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ProjectsComponent {
 }

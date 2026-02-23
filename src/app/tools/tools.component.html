@@ -1,7 +1,16 @@
 <h2>Tools</h2>
+<div class="search-bar">
+  <input type="text"
+         placeholder="Search tools..."
+         [ngModel]="searchQuery()"
+         (ngModelChange)="onSearch($event)"/>
+</div>
 <div class="tools-wrapper">
-  @for (toolsSet of namedToolsSet; track toolsSet) {
+  @for (toolsSet of filteredToolsSets(); track toolsSet.title) {
     <app-grouped-tools [title]="toolsSet.title" [tools]="toolsSet.tools"></app-grouped-tools>
+  } @empty {
+    <div class="no-results">
+      <p>No matching tools found.</p>
+    </div>
   }
 </div>
-

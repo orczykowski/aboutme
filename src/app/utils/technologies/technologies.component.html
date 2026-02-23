@@ -3,7 +3,7 @@
   [
   @for (technology of technologies(); track technology) {
     <div>
-      <span>{{ technology |  lowercase }}</span>,
+      <span [innerHTML]="(technology | lowercase) | highlight:searchQuery()"></span>,
     </div>
   }
   ]

@@ -1,6 +1,6 @@
 import {Component, input} from '@angular/core';
-import {ToolDefinition} from "../tool-model";
-import {RatingComponent} from "../../utils/rating/rating.component";
+import {ToolDefinition} from '../tool-model';
+import {RatingComponent} from '../../utils/rating/rating.component';
 
 @Component({
   selector: 'app-grouped-tools',
@@ -10,8 +10,6 @@ import {RatingComponent} from "../../utils/rating/rating.component";
   imports: [RatingComponent]
 })
 export class GroupedToolsComponent {
-
-  title = input<string>("tools")
-  tools = input<ToolDefinition[]>()
+  title = input<string>('tools');
+  tools = input<ToolDefinition[]>();
 }
-

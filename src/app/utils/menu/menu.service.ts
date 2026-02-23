@@ -4,19 +4,17 @@ import {Injectable, signal} from '@angular/core';
   providedIn: 'root'
 })
 export class MenuService {
-
-  // Signal-based state management (Angular 20 feature)
   menuVisibility = signal<boolean>(false);
 
-  showMenu() {
+  showMenu(): void {
     this.menuVisibility.set(true);
   }
 
-  hideMenu() {
+  hideMenu(): void {
     this.menuVisibility.set(false);
   }
 
-  toggleMenu() {
+  toggleMenu(): void {
     this.menuVisibility.update(value => !value);
   }
 }

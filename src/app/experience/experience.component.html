@@ -1,6 +1,19 @@
 <h2>Experience</h2>
+<div class="search-bar">
+  <input type="text"
+         placeholder="Search by company, position, technology, responsibility..."
+         [ngModel]="searchQuery()"
+         (ngModelChange)="onSearch($event)"/>
+  @if (searchQuery().trim()) {
+    <span class="result-count">{{ totalJobs() }} found</span>
+  }
+</div>
 @for (job of jobs(); track job) {
   <div>
-    <job [jobInfo]=job></job>
+    <job [jobInfo]="job" [searchQuery]="searchQuery()"></job>
+  </div>
+} @empty {
+  <div class="no-results">
+    <p>No matching experience found.</p>
   </div>
 }
