@@ -30,6 +30,18 @@ export class ToolsComponent {
       ],
     },
     {
+      title: 'AI',
+      tools: [
+        {experienceRate: 3.7, name: 'ChatGPT'},
+        {experienceRate: 3, name: 'GitHub Copilot'},
+        {experienceRate: 3.7, name: 'Claude Code'},
+        {experienceRate: 2, name: 'Gemini'},
+        {experienceRate: 3.7, name: 'Building Agents'},
+        {experienceRate: 3.7, name: 'Creating Skills'},
+        {experienceRate: 3, name: 'MCP'},
+      ],
+    },
+    {
       title: 'Backend frameworks / libraries',
       tools: [
         {experienceRate: 5, name: Technology.SPRING},
@@ -189,8 +201,6 @@ export class ToolsComponent {
         {experienceRate: 4, name: 'Linux'},
         {experienceRate: 4, name: 'MacOsx'},
         {experienceRate: 4.5, name: 'IntelliJ'},
-        {experienceRate: 3, name: 'Chat gpt'},
-        {experienceRate: 3, name: 'GitHub copilot'},
       ],
     },
   ];
