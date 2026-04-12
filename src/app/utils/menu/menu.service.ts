@@ -13,8 +13,4 @@ export class MenuService {
   hideMenu(): void {
     this.menuVisibility.set(false);
   }
-
-  toggleMenu(): void {
-    this.menuVisibility.update(value => !value);
-  }
 }

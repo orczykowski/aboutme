@@ -63,7 +63,6 @@ export enum Technology {
   REST_ASSURED = 'rest_assured',
   SONAR = 'sonar',
   CYPRESS = 'cypress',
-  WORDPRESS = 'wordpress',
   GIT = 'git',
   GITLAB = 'gitlab',
   GITHUB = 'github',
