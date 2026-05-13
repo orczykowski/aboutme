@@ -290,6 +290,7 @@ export class JobRepository {
         companyName: 'J-laabs - Brown Brothers Harriman (BBH)',
         position: 'Technical Leader',
         begin: new Date('2023-09-15'),
+        end: new Date('2024-02-01'),
         mainTechnologies: [
           Technology.JAVA, Technology.TYPE_SCRIPT, Technology.SPRING, Technology.SPRING_TEST, Technology.SPRING_BOOT, Technology.ANGULAR,
         ],
