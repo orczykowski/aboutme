@@ -86,6 +86,8 @@ export enum Technology {
   BITBUCKET = 'bitbucket',
   SPLUNK = 'splunk',
   CLOUDFLARE = 'cloudflare',
+  GCP = 'gcp',
+  JOOQ = 'jooq',
 }
 
 export enum ApplicationArchitecture {

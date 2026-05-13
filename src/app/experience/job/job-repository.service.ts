@@ -326,6 +326,45 @@ export class JobRepository {
         description:
           'Work at a BBH client, on the client\'s internal system. Development and maintenance of a system that enables processing, transforming, and analyzing documents.',
       },
+      {
+        companyName: 'Fourthwall',
+        position: 'Senior Software Engineer',
+        begin: new Date('2024-02-01'),
+        mainTechnologies: [
+          Technology.KOTLIN, Technology.SPRING, Technology.SPRING_BOOT, Technology.JOOQ,
+          Technology.POSTGRES, Technology.REACT, Technology.TYPE_SCRIPT,
+          Technology.GCP, Technology.REST,
+        ],
+        otherTechnologies: [],
+        methodologies: [Methodology.AGILE],
+        mainResponsibilities: [
+          'software development – backend and frontend',
+          'design system/application architecture',
+          'designing and developing scalable microservices and APIs',
+          'performance optimization of applications, databases, and infrastructure',
+          'monitoring and maintaining production systems',
+          'working with cloud infrastructure and services in GCP',
+          'creating and maintaining automated tests (unit, integration, e2e)',
+          'ensuring high code quality and engineering standards',
+          'technical debt management and refactoring existing solutions',
+          'participation in architectural and technical decision-making processes',
+          'troubleshooting and resolving production issues',
+          'supporting engineering culture and best practices',
+        ],
+        additionalResponsibilities: [
+          'onboarding and supporting new team members',
+          'participation in R&D / POC initiatives',
+          'business support in technological decision-making',
+          'improving observability, monitoring, and system reliability',
+          'leveraging AI tools and agentic coding approaches to accelerate software delivery and improve development workflows',
+          'designing and developing AI Agents and AI Workflows supporting automation and internal engineering processes',
+          'evaluating and integrating AI-driven solutions into existing systems and development practices',
+        ],
+        applicationArchitectures: [ApplicationArchitecture.HEXAGONAL_ARCHITECTURE],
+        systemArchitecture: SystemArchitecture.MICROSERVICES,
+        description:
+          'Development of systems supporting creators and e-commerce functionalities within the Fourthwall platform. Participation in designing scalable services, improving developer experience, optimizing platform performance, and supporting product growth in a fast-paced environment.',
+      },
     ].sort((a, b) => this.compare(a, b));
   }
 
