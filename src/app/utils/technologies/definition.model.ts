@@ -41,7 +41,7 @@ export enum Technology {
   YAML = 'yaml',
   CSS = 'css',
   JSON = 'json',
-  K8S = 'k8s',
+  K8S = 'kubernetes',
   OKD = 'okd',
   ARGO = 'argo',
   KAFKA = 'kafka',
