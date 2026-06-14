@@ -257,7 +257,7 @@ export class JobRepository {
         companyName: 'J-laabs - Brown Brothers Harriman (BBH)',
         position: 'Technical Leader',
         begin: new Date('2023-09-15'),
-        end: new Date('2024-02-01'),
+        end: new Date('2025-02-01'),
         mainTechnologies: [
           Technology.JAVA, Technology.TYPE_SCRIPT, Technology.SPRING, Technology.SPRING_TEST, Technology.SPRING_BOOT, Technology.ANGULAR,
         ],
@@ -286,7 +286,7 @@ export class JobRepository {
       {
         companyName: 'Fourthwall',
         position: 'Senior Software Engineer',
-        begin: new Date('2024-02-01'),
+        begin: new Date('2025-02-01'),
         mainTechnologies: [
           Technology.KOTLIN, Technology.SPRING, Technology.SPRING_BOOT, Technology.JOOQ,
           Technology.POSTGRES, Technology.REACT, Technology.TYPE_SCRIPT,
