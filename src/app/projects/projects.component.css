@@ -1,20 +1,129 @@
-div.project {
-  margin-top: 2.5em;
+.projects-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 1em;
 }
 
-.project-description *{
-  color: var(--gray);
-  font-style: initial;
+.project-row {
+  border-left: 2px solid var(--dark-gray);
+  padding: 0.9em 1em 1em 1.1em;
+  transition: border-left-color 0.2s ease, background 0.2s ease;
+}
+
+.project-row:hover {
+  border-left-color: var(--yellow);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Header: name + link icons */
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-bottom: 0.75em;
+}
+
+.project-name {
+  color: var(--light-green);
   font-size: 0.9em;
+  font-family: 'JetBreinsFont', monospace;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  transition: color 0.15s ease;
 }
 
-h4 {
-  font-weight: bold;
-  font-size: 1em;
-  margin: 1em 0 0.75em 0;
+.project-row:hover .project-name {
+  color: #b5d47a;
 }
 
-div.project a {
-  display: block;
+.header-links {
+  display: flex;
+  gap: 0.6em;
+  flex-shrink: 0;
+}
+
+.icon-link {
   color: var(--blue);
+  font-size: 0.75em;
+  font-family: 'JetBreinsFont', monospace;
+  opacity: 0.6;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.icon-link:hover {
+  opacity: 1;
+  color: var(--light-yellow);
+}
+
+/* Body: description, tech tags, links */
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85em;
+  padding-left: 0.5em;
+}
+
+.description {
+  color: var(--gray);
+  font-size: 0.8em;
+  font-style: italic;
+  line-height: 1.75;
+  opacity: 0.8;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em;
+}
+
+.badge {
+  font-size: 0.67em;
+  color: var(--blue);
+  background: rgba(101, 147, 181, 0.08);
+  border: 1px solid rgba(101, 147, 181, 0.2);
+  padding: 1px 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+  font-family: 'JetBreinsFont', monospace;
+  letter-spacing: 0.02em;
+}
+
+.full-links {
+  display: flex;
+  gap: 1.2em;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  color: var(--blue);
+  font-size: 0.82em;
+  font-family: 'JetBreinsFont', monospace;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.3em 0.75em;
+  border: 1px solid rgba(101, 147, 181, 0.35);
+  background: rgba(101, 147, 181, 0.07);
+  border-radius: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.project-link:hover {
+  color: var(--light-yellow);
+  border-color: rgba(243, 187, 76, 0.45);
+  background: rgba(243, 187, 76, 0.06);
+}
+
+@media only screen and (max-width: 800px) {
+  .project-name {
+    font-size: 0.8em;
+    white-space: normal;
+  }
 }

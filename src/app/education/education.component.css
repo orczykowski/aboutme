@@ -141,9 +141,8 @@
 
 .cert-link {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
   padding: 0.65em 1em;
   border: 1px solid var(--dark-gray);
   border-left: 2px solid var(--green);
@@ -184,6 +183,8 @@
   font-size: 0.8em;
   color: var(--gray);
   flex-shrink: 0;
+  margin-left: auto;
+  padding-left: 0.5em;
 }
 
 @media (max-width: 800px) {

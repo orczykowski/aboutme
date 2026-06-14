@@ -1,42 +1,167 @@
-div {
-  width: 100%;
-  text-align: center;
-  margin: auto;
+/* Header */
+.welcome-header {
+  padding-bottom: 0.8em;
+  margin-bottom: 1.2em;
+  border-bottom: 1px solid var(--dark-gray);
 }
 
-div * {
-  text-align: left;
+.welcome-header h2 {
+  margin: 0;
+  letter-spacing: 0.01em;
 }
 
-p {
+/* Two-column layout */
+.welcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  gap: 2.5em;
+  align-items: start;
+}
+
+/* About */
+.about-section h3 {
+  margin-top: 0;
+}
+
+.about-section p {
   margin-bottom: 0.85em;
-  line-height: 1.7;
-}
-div a {
-  opacity: 0.6;
+  line-height: 1.75;
+  font-size: 0.91em;
 }
 
-div a img {
-  scale: 0.5;
-  margin: 0.1em;
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
 }
 
-div a:hover {
-  animation: fadeIn 1s;
-  animation-fill-mode: forwards;
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 1em;
+  padding-bottom: 1.2em;
+  border-bottom: 1px solid var(--dark-gray);
 }
 
-div a {
+.social-links a {
+  opacity: 0.5;
   cursor: pointer;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.social-links a:hover {
+  opacity: 1;
 }
 
+.social-links img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
 
+/* Sidebar section headers — same style as education component */
+.section-header {
+  font-size: 0.82em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--yellow);
+  padding: 0.5em 0;
+  border-bottom: 1px solid var(--yellow);
+  margin-bottom: 0.6em;
+}
+
+/* Languages */
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.lang-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88em;
+  padding: 0.3em 0.7em;
+  border-left: 2px solid var(--dark-gray);
+  transition: border-left-color 0.2s ease;
+}
+
+.lang-list li::before {
+  content: '◆';
+  font-size: 0.5em;
+  color: var(--yellow);
+  margin-right: 0.7em;
+  flex-shrink: 0;
+}
+
+.lang-list li:hover {
+  border-left-color: var(--yellow);
+}
+
+.lang-name {
+  color: var(--white);
+  flex: 1;
+}
+
+.lang-level {
+  color: var(--gray);
+  font-size: 0.85em;
+}
+
+/* Hobbies */
+.hobby-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+}
+
+.hobby-list li {
+  font-size: 0.82em;
+  color: var(--gray);
+  padding: 0.3em 0.7em;
+  border: 1px solid var(--dark-gray);
+  letter-spacing: 0.03em;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.hobby-list li:hover {
+  border-color: var(--green);
+  color: var(--light-green);
+}
+
+.hobby-list li::before {
+  font-size: 1em;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.hobby-moto::before  { content: '⚙'; }
+.hobby-it::before    { content: '⌨'; }
+.hobby-music::before { content: '♪'; }
+.hobby-sport::before { content: '◎'; }
+.hobby-agile::before { content: '↺'; }
+
+@media (max-width: 800px) {
+  .welcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .sidebar-block {
+    flex: 1;
+    min-width: 140px;
+  }
+}

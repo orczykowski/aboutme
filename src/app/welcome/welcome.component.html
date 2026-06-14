@@ -1,8 +1,9 @@
-<div>
+<div class="welcome-header">
   <h2>Senior fullstack developer / Leader / Architect / AI enthusiast</h2>
 </div>
-<div>
-  <div>
+
+<div class="welcome-grid">
+  <section class="about-section">
     <h3>About me</h3>
     <p>
       With over {{ experience() }}+ years of experience in software engineering, architecture, and technical leadership, I am a Full Stack Engineer specializing in designing scalable, high-performance systems and leading teams to deliver business-driven solutions. I combine hands-on engineering
@@ -23,28 +24,38 @@
     <p>
       Knowledge sharing, mentoring, and building strong engineering cultures are an important part of my work. Looking ahead, I aim to continue growing in leadership and architectural roles where I can shape technical strategy, empower teams, and drive the development of impactful products at scale.
     </p>
-  </div>
-  <div>
-    <h3>Languages</h3>
-    <ul>
-      <li>Polish - native</li>
-      <li>English - B2</li>
-    </ul>
-  </div>
-  <div>
-    <h3>Hobby</h3>
-    <p>
-      motorization, it, music, sport, lean/agile
-    </p>
-  </div>
+  </section>
+
+  <aside class="sidebar">
+    <div class="social-links">
+      <a (click)="showMenu()" title="Home">
+        <img src="assets/logos/home.png" alt="home">
+      </a>
+      <a href="https://github.com/orczykowski" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <img src="assets/logos/github.png" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/grzegorz-orczykowski-08b3096a/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <img src="assets/logos/linkedin.png" alt="linkedin">
+      </a>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-header">Languages</div>
+      <ul class="lang-list">
+        <li><span class="lang-name">Polish</span><span class="lang-level">native</span></li>
+        <li><span class="lang-name">English</span><span class="lang-level">B2</span></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-header">Hobby</div>
+      <ul class="hobby-list">
+        <li class="hobby-moto">motorization</li>
+        <li class="hobby-it">IT</li>
+        <li class="hobby-music">music</li>
+        <li class="hobby-sport">sport</li>
+        <li class="hobby-agile">lean / agile</li>
+      </ul>
+    </div>
+  </aside>
 </div>
-
-
-<div>
-  <a (click)="showMenu()"><img src="assets/logos/home.png" alt="home"></a>
-  <a href="https://github.com/orczykowski" target="_blank" rel="noopener noreferrer"><img src="assets/logos/github.png" alt="github"></a>
-  <a href="https://www.linkedin.com/in/grzegorz-orczykowski-08b3096a/" target="_blank" rel="noopener noreferrer"><img
-    src="assets/logos/linkedin.png"
-    alt="linkedin"></a>
-</div>
-

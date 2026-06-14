@@ -13,13 +13,31 @@
   padding: 25px;
 }
 
-#title-header{
-  color: #c2bfbf;
+#title-header {
   font-weight: normal;
-  width:90%;
-  margin: 12px  auto;
+  width: 90%;
+  margin: 8px auto 16px;
   text-align: center;
-  font-style: italic;
+  font-style: normal;
+  font-size: 0.82em;
+  letter-spacing: 0.06em;
+}
+
+#title-header .comment-prefix {
+  color: var(--green);
+}
+
+#title-header .role {
+  color: #c2bfbf;
+}
+
+#title-header .role-accent {
+  color: var(--light-green);
+}
+
+#title-header .sep {
+  color: var(--dark-gray);
+  padding: 0 0.1em;
 }
 
 @media only screen and (max-width: 800px) {
