@@ -1,13 +1,48 @@
-.tool-list {
-  width: 30em;
-}
-
-.tool-list div {
+:host {
   display: block;
-  text-align: left;
-  margin-left: 0.5em;
-  text-transform: uppercase;
+  break-inside: avoid;
+  margin-bottom: 0.4em;
 }
 
+.tool-list {
+  border: 1px solid var(--dark-gray);
+  border-top: 2px solid var(--dark-gray);
+  background: rgba(25, 26, 27, 0.5);
+  transition: border-top-color 0.2s ease;
+}
 
+.tool-list:hover {
+  border-top-color: var(--yellow);
+}
 
+.tool-list h3 {
+  margin: 0;
+  padding: 0.55em 0.8em;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--yellow);
+  border-bottom: 1px solid var(--dark-gray);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tool-list > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.42em 0.8em;
+  border-bottom: 1px solid rgba(61, 63, 65, 0.4);
+}
+
+.tool-list > div:last-child {
+  border-bottom: none;
+}
+
+.tool-list > div > span {
+  color: var(--white);
+  flex: 1;
+  min-width: 0;
+  font-size: 0.76em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

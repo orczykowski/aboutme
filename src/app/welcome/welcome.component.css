@@ -19,14 +19,34 @@
 }
 
 /* About */
-.about-section h3 {
-  margin-top: 0;
-}
-
-.about-section p {
-  margin-bottom: 0.85em;
+.intro {
+  margin-bottom: 2em;
   line-height: 1.75;
   font-size: 0.91em;
+  text-align: justify;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+
+.pillar h4 {
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--yellow);
+  margin: 0 0 0.6em 0;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--yellow);
+}
+
+.pillar p {
+  font-size: 0.87em;
+  line-height: 1.7;
+  color: var(--gray);
+  margin: 0;
 }
 
 /* Sidebar */
@@ -151,6 +171,10 @@
 
 @media (max-width: 800px) {
   .welcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pillars {
     grid-template-columns: 1fr;
   }
 

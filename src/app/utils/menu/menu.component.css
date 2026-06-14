@@ -49,6 +49,11 @@
   color: var(--blue);
 }
 
+.top-nav ul li a.active::before {
+  content: '#';
+  margin-right: 3px;
+}
+
 .top-nav .download-cv {
   color: var(--light-green);
 }

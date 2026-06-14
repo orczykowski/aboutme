@@ -1,27 +1,32 @@
 .rating {
-  display: inline-block;
-  width: 67px;
-  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  width: 70px;
+  height: 1.2em;
   position: relative;
-  margin-left: 1em;
+  flex-shrink: 0;
 }
 
 .rating span {
   position: absolute;
   left: 0;
-  bottom: -8px;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
-  font-size: 1.4em;
-  color: var(--orange);
+  font-size: 1.2em;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .unselected-stars {
   z-index: 1;
+  color: #3a3c3e;
 }
 
 .selected-stars {
   overflow: hidden;
   z-index: 2;
+  color: var(--orange);
 }
 
 

@@ -1,3 +1,7 @@
+h3 {
+  color: white;
+}
+
 .projects-table {
   display: flex;
   flex-direction: column;

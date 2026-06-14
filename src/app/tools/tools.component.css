@@ -1,8 +1,7 @@
 .tools-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  columns: 2;
+  column-gap: 1em;
+  margin-top: 1em;
 }
 
 .search-bar {
@@ -30,7 +29,6 @@
 }
 
 .no-results {
-  width: 100%;
   text-align: center;
   padding: 20px;
 }
@@ -38,4 +36,10 @@
 .no-results p {
   color: #808080;
   font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+  .tools-wrapper {
+    columns: 1;
+  }
 }
