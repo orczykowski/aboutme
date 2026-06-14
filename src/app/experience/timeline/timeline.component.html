@@ -1,0 +1,25 @@
+<div class="timeline-container">
+  <div class="timeline-track">
+    @for (year of timelineYears(); track year.year) {
+      <div class="year-marker" [style.left.%]="year.position">
+        <span class="year-tick"></span>
+        <span class="year-label">{{ year.year }}</span>
+      </div>
+    }
+    @for (entry of timelineEntries(); track entry.id) {
+      <button
+        class="timeline-bar"
+        [class]="entry.colorClass"
+        [class.above]="entry.above"
+        [class.dimmed]="entry.dimmed"
+        [class.active]="entry.active"
+        [style.left.%]="entry.startPosition"
+        [style.width.%]="entry.width"
+        [title]="nodeTitle(entry)"
+        (click)="onBarClick(entry)"
+      >
+        <span class="bar-label">{{ entry.job.companyName }}</span>
+      </button>
+    }
+  </div>
+</div>

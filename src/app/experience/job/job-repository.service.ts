@@ -157,40 +157,22 @@ export class JobRepository {
         ],
         methodologies: [Methodology.AGILE, Methodology.SCRUM, Methodology.SAFE],
         mainResponsibilities: [
-          'software development - backend and frontend',
-          'design system/application architecture',
-          'monitoring and maintenance of the developed software',
-          'participating in the implementation of each application (particularly the GraphQL facade)',
-          'implementation of changes in existing systems and infrastructure',
-          'creating a solution to monitor the achievement of business and technical goals',
-          'creating automated tests',
-          'taking care of the high quality of the code, application design and solutions',
-          'documenting solutions',
-          'code review',
-          'develop R&D / POC concepts',
-          'api design',
-          'business support in decision making (in the technological aspect)',
-          'support of various teams in making architectural decisions',
+          'defined business and technical metrics and monitoring strategy',
+          'participated in technology selection, R&D and risk analysis',
+          'designed distributed architecture including GraphQL BFF, CMS, SSR and monitoring services',
+          'participated in implementation of key platform components',
+          'created solutions measuring business and technical goals',
+          'supported architectural decisions across teams',
         ],
-        additionalResponsibilities: [
-          'creating a complete on-boarding process from scratch',
-          'participation in meetings determining the shape of the system architecture / method of integration',
-          'support for planning technological debt reduction',
-        ],
+        additionalResponsibilities: [],
         applicationArchitectures: [ApplicationArchitecture.HEXAGONAL_ARCHITECTURE, ApplicationArchitecture.MVC],
         systemArchitecture: SystemArchitecture.MICROSERVICES,
-        description: 'The goal of the project was to optimize the performance of the product page and the speed of presenting the full offer. The first stage of the project involved defining both '
-          + 'technical and business metrics, as well as methods for collecting and presenting them. '
-          + 'The metrics were gathered through an additional application that measured the performance of competing websites. '
-          + 'To ensure easy accessibility, the metrics were presented in Grafana on a dedicated dashboard. The second stage focused on '
-          + 'technology selection (R&D) and a detailed analysis of risks and opportunities. '
-          + 'Next, a system was designed consisting of several services, along with a facade using GraphQL as the API.'
-          + 'Applications created as part of the implementation: '
-          + '<br/> - BFF - facade using graphQL that allows you to dynamically pull data from several services'
-          + '<br/> - CMS - a system that allows you to define rules depending on various business rules that influenced the displayed content'
-          + '<br/> - SSR App - a consumer of the two previous apps, a view pre-renderer app for the client to reduce response time'
-          + '<br/> - Frontend app - rewritten application presenting product data,'
-          + '<br/> - Monitoring allowing for continuous verification of business goals',
+        description: 'The project focused on optimizing product page performance and reducing offer presentation time through KPI-driven engineering, GraphQL, SSR and monitoring.'
+          + '<br/> - <i>BFF</i>: facade using GraphQL that allows dynamically pulling data from several services'
+          + '<br/> - <i>CMS</i>: a system that allows defining rules depending on various business conditions that influence the displayed content'
+          + '<br/> - <i>SSR App</i>: a consumer of the two previous apps, a view pre-renderer for the client to reduce response time'
+          + '<br/> - <i>Frontend app</i>: rewritten application presenting product data'
+          + '<br/> - <i>Monitoring</i>: allowing for continuous verification of business goals',
       },
       {
         companyName: 'Apreel / Nationale Nederlanden',
@@ -209,20 +191,19 @@ export class JobRepository {
         ],
         methodologies: [Methodology.AGILE, Methodology.SCRUM, Methodology.SAFE],
         mainResponsibilities: [
-          'software development - backend and frontend',
-          'creating automated tests (all level unit, integration, e2e)',
-          'design system/application architecture',
-          'design and optimization of data and database usage',
-          'monitoring and maintenance of the developed software',
-          'taking care of the high quality of the code, application design and solutions',
-          'documenting solutions',
-          'code review',
-          'develop R&D / POC concepts',
-          'api design and development',
-          'design CI/CD',
+          'designed and developed backend and frontend components for the claims management platform',
+          'participated in solution architecture and system design discussions, helping shape the overall technical direction of the platform',
+          'designed APIs and integration patterns for communication between distributed services',
+          'created automated tests covering unit, integration and end-to-end scenarios',
+          'monitored and maintained production systems, ensuring reliability and operational stability',
+          'performed code reviews and promoted engineering best practices, code quality and maintainability',
+          'planned and supported technical debt reduction initiatives and long-term platform evolution',
+          'developed Proof of Concepts (PoCs) and evaluated new technologies before adoption',
+          'collaborated with business stakeholders to translate functional requirements into scalable technical solutions',
+          'prepared technical documentation and solution designs',
         ],
         additionalResponsibilities: [
-          'participation in a company-wide (international) program aimed at increasing the number of employed engineers and improving their working conditions in order to increase their retention.',
+          'participated in a company-wide (international) program aimed at increasing the number of employed engineers and improving their working conditions in order to increase their retention',
         ],
         applicationArchitectures: [
           ApplicationArchitecture.HEXAGONAL_ARCHITECTURE,
@@ -230,12 +211,7 @@ export class JobRepository {
           ApplicationArchitecture.LAYERED_ARCHITECTURE,
         ],
         systemArchitecture: SystemArchitecture.MICROSERVICES,
-        description: 'Body leasing to the insurance (Nationale Nederlanden) company. The project in the area of claims reporting aimed to develop a modern system to optimize and automate the entire claims management process. The key objectives of the project included:'
-          + '<br/> - High availability'
-          + '<br/> - Process automation: Selected stages of the claims handling process were automated to reduce the time required to process claims and to minimize the need for manual execution of routine tasks. As a result, the system can independently assign cases to appropriate staff, update claim statuses, and inform customers about the progress of their cases.'
-          + '<br/> - Integration of various solutions: The system was designed to integrate with other systems, such as insurance systems, customer communication tools, and external databases (e.g., insurance history databases). These connections allow real-time data exchange, which streamlines the entire claims handling process.'
-          + '<br/> - Single source of truth: The system serves as a central repository of information on the claim\'s status, eliminating discrepancies. This ensures that both employees and customers have access to up-to-date and consistent information about each stage of the claims process.'
-          + ' This project increased the efficiency and speed of claims handling, improved process transparency, and enhanced customer satisfaction by providing quick access to information on the status of their claims.',
+        description: 'Body leasing to the insurance (Nationale Nederlanden) company. The project focused on building a modern end-to-end claims management platform responsible for reporting, automating, processing and handling insurance claims. The system was designed to streamline business processes, improve operational efficiency and provide a scalable foundation for future digital transformation initiatives.',
       },
       {
         companyName: 'Nationale Nederlanden',
@@ -254,24 +230,20 @@ export class JobRepository {
         ],
         methodologies: [Methodology.AGILE, Methodology.SCRUM, Methodology.SAFE],
         mainResponsibilities: [
-          'software development - backend and frontend',
-          'creating automated tests',
-          'support of various teams in making architectural decisions',
-          'participation in meetings determining the shape of the system architecture / method of integration',
-          'support for planning technological debt reduction',
-          'design system/application architecture',
-          'monitoring and maintenance of the developed software',
-          'taking care of the high quality of the code, application design and solutions',
-          'documenting solutions',
-          'code review',
-          'develop R&D / POC concepts',
-          'api design',
-          'business support in decision making (in the technological aspect)',
-          'support for team members\' development and evaluating their progress.',
+          'provided technical leadership while remaining hands-on in software development',
+          'supported multiple engineering teams in making architectural and integration decisions',
+          'participated in solution architecture and system design discussions',
+          'designed and developed backend and frontend components',
+          'performed code reviews and promoted engineering best practices, code quality and maintainability',
+          'monitored and maintained production systems, ensuring reliability and operational stability',
+          'planned and supported technical debt reduction initiatives',
+          'developed Proof of Concepts (PoCs) and evaluated new technologies before adoption',
+          'collaborated with business stakeholders to translate functional requirements into scalable technical solutions',
+          'prepared technical documentation and solution designs',
         ],
         additionalResponsibilities: [
-          'participation in a program aimed at creating / strengthening the engineering culture (NN Poland).',
-          'onboarding new team members',
+          'mentored team members, supported their professional development and participated in onboarding activities',
+          'contributed to engineering culture initiatives aimed at improving software development standards across NN Poland',
         ],
         applicationArchitectures: [
           ApplicationArchitecture.HEXAGONAL_ARCHITECTURE,
@@ -295,32 +267,21 @@ export class JobRepository {
         ],
         methodologies: [Methodology.SCRUM],
         mainResponsibilities: [
-          'design and development - backend and frontend functionality',
-          'designing system and application architecture',
-          'refactoring - rewriting inefficient parts of the application / coordinating activities',
-          'performance optimization - improving application, database, and infrastructure performance to ensure scalability, efficiency, and responsiveness.',
-          'maintaining and monitoring applications in production',
-          'management and coordination of team work',
-          'technical debt management',
-          'defining technical requirements',
-          'supporting team members\' development and evaluating their progress',
-          'redesigning and creating CI/CD pipelines',
-          'creating documentation',
-          'supporting process standardization',
-          'ensuring code quality and best practices',
-          'collaborating with cross-functional teams to deliver solutions',
-          'troubleshooting and resolving complex technical issues',
-          'driving continuous improvement in development processes',
+          'provided technical leadership while remaining actively involved in software development',
+          'designed application architecture and coordinated modernization initiatives',
+          'led refactoring of inefficient components and technical improvements',
+          'optimized application, database and infrastructure performance',
+          'coordinated team activities and defined technical requirements',
+          'mentored engineers and supported professional development',
+          'redesigned CI/CD pipelines and promoted engineering standards',
+          'participated in architecture and integration discussions',
+          'planned technical debt reduction and conducted technical interviews',
         ],
-        additionalResponsibilities: [
-          'participation in meetings determining the shape of the system architecture / method of integration',
-          'support for planning technological debt reduction',
-          'conducting technical interviews in the process of recruiting new employees',
-        ],
+        additionalResponsibilities: [],
         applicationArchitectures: [ApplicationArchitecture.OTHER, ApplicationArchitecture.LAYERED_ARCHITECTURE],
         systemArchitecture: SystemArchitecture.MONOLITH,
         description:
-          'Work at a BBH client, on the client\'s internal system. Development and maintenance of a system that enables processing, transforming, and analyzing documents.',
+          'Development and maintenance of an internal document processing platform enabling document transformation and analysis.',
       },
       {
         companyName: 'Fourthwall',
@@ -331,35 +292,30 @@ export class JobRepository {
           Technology.POSTGRES, Technology.REACT, Technology.TYPE_SCRIPT,
           Technology.REST, Technology.CLAUDE_CODE,
         ],
-        otherTechnologies: [ Technology.GCP,],
+        otherTechnologies: [ Technology.GCP, Technology.GITLAB, Technology.GIT, Technology.CHAT_GPT],
         methodologies: [Methodology.AGILE],
         mainResponsibilities: [
-          'software development – backend and frontend',
-          'design system/application architecture',
-          'designing and developing scalable microservices and APIs',
-          'performance optimization of applications, databases, and infrastructure',
-          'monitoring and maintaining production systems',
-          'working with cloud infrastructure and services in GCP',
-          'creating and maintaining automated tests (unit, integration, e2e)',
-          'ensuring high code quality and engineering standards',
-          'technical debt management and refactoring existing solutions',
-          'participation in architectural and technical decision-making processes',
-          'troubleshooting and resolving production issues',
-          'supporting engineering culture and best practices',
+          'designed system and application architecture for scalable backend services and microservices',
+          'developed backend and frontend solutions with focus on maintainability and performance',
+          'designed and implemented APIs supporting business growth and platform evolution',
+          'optimized applications, databases and infrastructure for scalability and reliability',
+          'worked with Google Cloud Platform infrastructure and production environments',
+          'created and maintained automated unit, integration and end-to-end tests',
+          'managed technical debt and refactored legacy components',
+          'participated in architectural and technical decision-making processes',
+          'improved observability, monitoring and operational reliability',
+          'designed and developed AI Agents and AI Workflows supporting engineering automation',
+          'leveraged AI tools and agentic coding approaches to improve software delivery',
+          'evaluated and integrated AI-driven solutions into existing development practices',
         ],
         additionalResponsibilities: [
-          'onboarding and supporting new team members',
-          'participation in R&D / POC initiatives',
-          'business support in technological decision-making',
-          'improving observability, monitoring, and system reliability',
-          'leveraging AI tools and agentic coding approaches to accelerate software delivery and improve development workflows',
-          'designing and developing AI Agents and AI Workflows supporting automation and internal engineering processes',
-          'evaluating and integrating AI-driven solutions into existing systems and development practices',
+          'supported engineering culture, onboarding and knowledge sharing',
+          'participated in R&D and Proof of Concept initiatives',
         ],
         applicationArchitectures: [ApplicationArchitecture.HEXAGONAL_ARCHITECTURE],
         systemArchitecture: SystemArchitecture.MICROSERVICES,
         description:
-          'Development of systems supporting creators and e-commerce functionalities within the Fourthwall.com  platform. Participation in designing scalable services, improving developer experience, optimizing platform performance, and supporting product growth in a fast-paced environment.',
+          'Development of systems supporting creators and e-commerce functionalities within the Fourthwall platform. Contributing to scalable services, developer experience, platform performance and AI-driven engineering initiatives.',
       },
     ].sort((a, b) => this.compare(a, b));
   }

@@ -8,30 +8,12 @@
     <span class="result-count">{{ totalJobs() }} found</span>
   }
 </div>
-<div class="timeline-container">
-  <div class="timeline-track">
-    @for (year of timelineYears(); track year.year) {
-      <div class="year-marker" [style.left.%]="year.position">
-        <span class="year-tick"></span>
-        <span class="year-label">{{ year.year }}</span>
-      </div>
-    }
-    @for (entry of timelineJobs(); track entry.id) {
-      <button
-        class="timeline-node"
-        [class.above]="entry.above"
-        [class.dimmed]="searchQuery().trim() && !isInResults(entry.job)"
-        [class.active]="searchQuery().trim() && isInResults(entry.job)"
-        [style.left.%]="entry.position"
-        [title]="nodeTitle(entry.job)"
-        (click)="scrollToJob(entry.job)"
-      >
-        <span class="node-dot"></span>
-        <span class="node-label">{{ entry.job.companyName }}</span>
-      </button>
-    }
-  </div>
-</div>
+<app-timeline
+  [jobs]="allJobs()"
+  [filteredJobs]="jobs()"
+  [searchQuery]="searchQuery()"
+  (jobClicked)="scrollToJob($event)"
+></app-timeline>
 @for (job of jobs(); track job) {
   <div [id]="toJobId(job)">
     <job [jobInfo]="job" [searchQuery]="searchQuery()"></job>
