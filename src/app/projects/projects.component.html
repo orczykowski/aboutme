@@ -2,7 +2,7 @@
 <h3>A collection of open-source projects demonstrating my coding style, architectural decisions, and engineering practices.</h3>
 <div class="projects-table">
   @for (project of projects; track project.id) {
-    <div class="project-row">
+    <article class="project-row">
 
       <div class="project-header">
         <span class="project-name">{{ project.name }}</span>
@@ -12,6 +12,7 @@
                [href]="link.url"
                target="_blank"
                rel="noopener noreferrer"
+               [aria-label]="link.label === 'GitHub' ? 'View source on GitHub: ' + project.name : 'Open project: ' + project.name"
                [title]="link.label">
               @if (link.label === 'GitHub') {
                 &lt;/&gt;
@@ -34,15 +35,15 @@
           @for (link of project.links; track link.url) {
             <a class="project-link" [href]="link.url" target="_blank" rel="noopener noreferrer">
               @if (link.label === 'GitHub') {
-                &lt;/&gt;
+                View source on GitHub
               } @else {
-                ↗
-              } {{ link.label }}
+                Open project
+              }
             </a>
           }
         </div>
       </div>
 
-    </div>
+    </article>
   }
 </div>

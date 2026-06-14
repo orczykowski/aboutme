@@ -1,6 +1,7 @@
 <h2>Experience</h2>
 <div class="search-bar">
   <input type="text"
+         aria-label="Search experience by company, position, technology or responsibility"
          placeholder="Search by company, position, technology, responsibility..."
          [ngModel]="searchQuery()"
          (ngModelChange)="onSearch($event)"/>

@@ -4,6 +4,7 @@
 
 <div class="welcome-grid">
   <section class="about-section">
+    <h3 class="visually-hidden">About</h3>
     <p class="intro">
       With over {{ experience() }}+ years of experience in software engineering, architecture, and technical leadership,
       I specialize in designing scalable, high-performance systems and leading teams to deliver business-driven solutions.
@@ -13,7 +14,7 @@
 
     <div class="pillars">
       <div class="pillar">
-        <h4>Engineering Philosophy</h4>
+        <h3>Engineering Philosophy</h3>
         <p>
           Rooted in proven craftsmanship principles — DDD, TDD, SOLID, DRY — I build maintainable, extensible, and
           well-tested systems. I favor pragmatic solutions over unnecessary complexity, enabling teams to move fast
@@ -21,7 +22,7 @@
         </p>
       </div>
       <div class="pillar">
-        <h4>AI &amp; Innovation</h4>
+        <h3>AI &amp; Innovation</h3>
         <p>
           As an AI enthusiast, I explore how modern AI technologies improve developer productivity, automate workflows,
           and create innovative product capabilities — bridging the gap between emerging technologies and real-world
@@ -29,7 +30,7 @@
         </p>
       </div>
       <div class="pillar">
-        <h4>Leadership &amp; Culture</h4>
+        <h3>Leadership &amp; Culture</h3>
         <p>
           Knowledge sharing, mentoring, and building strong engineering cultures are central to my work. I aim to shape
           technical strategy, empower teams, and drive the development of impactful products at scale.
@@ -40,14 +41,14 @@
 
   <aside class="sidebar">
     <div class="social-links">
-      <a (click)="showMenu()" title="Home">
-        <img src="assets/logos/home.png" alt="home">
+      <a (click)="showMenu()" aria-label="Open navigation menu" title="Home">
+        <img src="assets/logos/home.png" alt="home" loading="lazy">
       </a>
-      <a href="https://github.com/orczykowski" target="_blank" rel="noopener noreferrer" title="GitHub">
-        <img src="assets/logos/github.png" alt="github">
+      <a href="https://github.com/orczykowski" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" title="GitHub">
+        <img src="assets/logos/github.png" alt="GitHub profile" loading="lazy">
       </a>
-      <a href="https://www.linkedin.com/in/grzegorz-orczykowski-08b3096a/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-        <img src="assets/logos/linkedin.png" alt="linkedin">
+      <a href="https://www.linkedin.com/in/grzegorz-orczykowski-08b3096a/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile" title="LinkedIn">
+        <img src="assets/logos/linkedin.png" alt="LinkedIn profile" loading="lazy">
       </a>
     </div>
 

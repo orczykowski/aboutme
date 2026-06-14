@@ -1,4 +1,5 @@
-import {Component, computed, inject, linkedSignal, signal} from '@angular/core';
+import {Component, computed, inject, linkedSignal, signal, PLATFORM_ID} from '@angular/core';
+import {isPlatformBrowser} from '@angular/common';
 import {JobInfo} from './job/job.model';
 import {JobRepository} from './job/job-repository.service';
 import {JobComponent} from './job/job.component';
@@ -13,6 +14,7 @@ import {TimelineComponent} from './timeline/timeline.component';
   imports: [JobComponent, FormsModule, TimelineComponent]
 })
 export class ExperienceComponent {
+  private platformId = inject(PLATFORM_ID);
   private jobRepository = inject(JobRepository);
   allJobs = signal<JobInfo[]>(this.jobRepository.findAll());
 
@@ -36,7 +38,9 @@ export class ExperienceComponent {
   }
 
   scrollToJob(job: JobInfo): void {
-    document.getElementById(this.toJobId(job))?.scrollIntoView({behavior: 'smooth', block: 'start'});
+    if (isPlatformBrowser(this.platformId)) {
+      document.getElementById(this.toJobId(job))?.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
   }
 
   onSearch(query: string): void {

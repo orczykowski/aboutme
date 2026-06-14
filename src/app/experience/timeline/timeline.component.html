@@ -16,6 +16,7 @@
         [style.left.%]="entry.startPosition"
         [style.width.%]="entry.width"
         [title]="nodeTitle(entry)"
+        [attr.aria-label]="nodeTitle(entry)"
         (click)="onBarClick(entry)"
       >
         <span class="bar-label">{{ entry.job.companyName }}</span>

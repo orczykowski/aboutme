@@ -6,14 +6,270 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-6TPZ8YJ0TM');
   </script>
+  <!-- SPA redirect restoration for GitHub Pages PathLocationStrategy -->
+  <script>
+    (function(l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function(s) {
+          return s.replace(/~and~/g, '&');
+        });
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded[0] + (decoded[1] ? '?' + decoded[1] : '') + l.hash
+        );
+      }
+    }(window.location));
+  </script>
   <meta charset="utf-8">
-  <title>Grzegorz Orczykowski - senior software engineer / architect / leader CV</title>
+  <title>Grzegorz Orczykowski – Senior Software Engineer | Architect | Tech Lead</title>
   <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CV of Grzegorz Orczykowski — Senior Software Engineer, Architect and Tech Lead with 15+ years of experience in Java, Kotlin, Spring Boot, microservices, DDD and Angular.">
+  <meta name="author" content="Grzegorz Orczykowski">
+  <meta name="theme-color" content="#323436">
+  <link rel="canonical" href="https://orczykowski.github.io/aboutme/">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preload" href="assets/background.jpg" as="image">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Grzegorz Orczykowski – Senior Software Engineer | Architect | Tech Lead">
+  <meta property="og:description" content="Senior Software Engineer, Architect and Tech Lead with 15+ years of experience in Java, Kotlin, Spring Boot, microservices, DDD and Angular.">
+  <meta property="og:url" content="https://orczykowski.github.io/aboutme/">
+  <meta property="og:image" content="https://orczykowski.github.io/aboutme/assets/logos/github.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="profile:first_name" content="Grzegorz">
+  <meta property="profile:last_name" content="Orczykowski">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Grzegorz Orczykowski – Senior Software Engineer | Architect | Tech Lead">
+  <meta name="twitter:description" content="Senior Software Engineer, Architect and Tech Lead with 15+ years of experience in Java, Kotlin, Spring Boot, microservices, DDD and Angular.">
+  <meta name="twitter:image" content="https://orczykowski.github.io/aboutme/assets/logos/github.png">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://orczykowski.github.io/aboutme/#person",
+        "name": "Grzegorz Orczykowski",
+        "givenName": "Grzegorz",
+        "familyName": "Orczykowski",
+        "jobTitle": "Senior Software Engineer / Architect / Tech Lead",
+        "email": "grzegorz.orczykowski@gmail.com",
+        "url": "https://orczykowski.github.io/aboutme/",
+        "sameAs": [
+          "https://github.com/orczykowski",
+          "https://www.linkedin.com/in/grzegorz-orczykowski-08b3096a/"
+        ],
+        "knowsAbout": [
+          "Java", "Kotlin", "Spring Boot", "Spring Cloud", "Microservices",
+          "Domain-Driven Design", "Angular", "Software Architecture",
+          "Technical Leadership", "Agile", "Test-Driven Development"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "University of Adam Mickiewicz in Poznań",
+          "url": "https://wmi.amu.edu.pl"
+        },
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Professional Scrum Master I (PSM1)",
+            "credentialCategory": "Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Google AI Essentials",
+            "credentialCategory": "Certificate",
+            "recognizedBy": { "@type": "Organization", "name": "Google / Coursera" }
+          }
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Fourthwall"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://orczykowski.github.io/aboutme/#website",
+        "url": "https://orczykowski.github.io/aboutme/",
+        "name": "Grzegorz Orczykowski – CV",
+        "description": "Online CV and portfolio of Grzegorz Orczykowski, Senior Software Engineer, Architect and Tech Lead.",
+        "author": { "@id": "https://orczykowski.github.io/aboutme/#person" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://orczykowski.github.io/aboutme/projects#list",
+        "name": "Open-Source Projects by Grzegorz Orczykowski",
+        "url": "https://orczykowski.github.io/aboutme/projects",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "spring-boot-feature-flags",
+              "description": "A lightweight, production-ready Spring Boot starter library for feature flag management. Supports multiple storage backends (in-memory, JPA, Redis, MongoDB), runtime REST API control, and Micrometer metrics. Published to Maven Central.",
+              "programmingLanguage": ["Java", "Spring Boot", "Groovy"],
+              "codeRepository": "https://github.com/orczykowski/spring-boot-feature-flags",
+              "author": { "@id": "https://orczykowski.github.io/aboutme/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "logback-sensitive-data-obfuscator",
+              "description": "A lightweight Logback Classic library for masking PII and sensitive data in application logs. Supports JSON, key-value and custom formats with full-mask and shortcut-mask strategies and built-in ReDoS protection. Published to Maven Central.",
+              "programmingLanguage": ["Java"],
+              "codeRepository": "https://github.com/orczykowski/logback-sensitive-data-obfuscator-pattern-layout",
+              "author": { "@id": "https://orczykowski.github.io/aboutme/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "logstash-logback-sensitive-data-obfuscator",
+              "description": "A lightweight logback-logstash library for masking PII and sensitive data in JSON logs during serialization. Includes built-in ReDoS protection with configurable regex timeout. Published to Maven Central.",
+              "programmingLanguage": ["Java"],
+              "codeRepository": "https://github.com/orczykowski/logstash-logback-sensitive-data-obfuscator",
+              "author": { "@id": "https://orczykowski.github.io/aboutme/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "gustaw",
+              "description": "A website about cats containing a food requirement calculator, articles in Polish, and information about charity organizations.",
+              "applicationCategory": "WebApplication",
+              "operatingSystem": "Web",
+              "url": "https://orczykowski.github.io/gustaw/",
+              "codeRepository": "https://github.com/orczykowski/gustaw",
+              "author": { "@id": "https://orczykowski.github.io/aboutme/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "multi-project-contribution-stats-calculator",
+              "description": "A CLI tool that calculates contribution statistics across multiple Git repositories using JGit. Produces per-contributor breakdowns of commits, lines changed, production vs. test code, and project distribution. Supports HTML, CSV and PDF output.",
+              "programmingLanguage": ["Java", "Groovy", "Spring Boot"],
+              "codeRepository": "https://github.com/orczykowski/multi-project-contribution-stats-calculator",
+              "author": { "@id": "https://orczykowski.github.io/aboutme/#person" }
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://orczykowski.github.io/aboutme/experience#list",
+        "name": "Work Experience – Grzegorz Orczykowski",
+        "url": "https://orczykowski.github.io/aboutme/experience",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Senior Software Engineer",
+              "startDate": "2025-02",
+              "worksFor": { "@type": "Organization", "name": "Fourthwall" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Technical Leader",
+              "startDate": "2023-09",
+              "endDate": "2025-02",
+              "worksFor": { "@type": "Organization", "name": "J-laabs / Brown Brothers Harriman (BBH)" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Software Engineering Lead",
+              "startDate": "2022-02",
+              "endDate": "2023-06",
+              "worksFor": { "@type": "Organization", "name": "Nationale Nederlanden" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Senior Software Engineer",
+              "startDate": "2021-01",
+              "endDate": "2022-02",
+              "worksFor": { "@type": "Organization", "name": "Apreel / Nationale Nederlanden" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Architect – Hands On",
+              "startDate": "2020-01",
+              "endDate": "2021-01",
+              "worksFor": { "@type": "Organization", "name": "Empik" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Senior Java Developer / Team Leader",
+              "startDate": "2019-06",
+              "endDate": "2019-12",
+              "worksFor": { "@type": "Organization", "name": "B2B Network" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Senior Software Engineer",
+              "startDate": "2012-11",
+              "endDate": "2019-06",
+              "worksFor": { "@type": "Organization", "name": "Allegro", "url": "https://allegro.pl" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "OrganizationRole",
+              "roleName": "Developer",
+              "startDate": "2010-07",
+              "endDate": "2011-12",
+              "worksFor": { "@type": "Organization", "name": "Smartfrigo" }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <app-root></app-root>
