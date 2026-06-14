@@ -21,7 +21,7 @@ export class ToolsComponent {
       tools: [
         {experienceRate: 4.7, name: Technology.JAVA},
         {experienceRate: 4, name: Technology.GROOVY},
-        {experienceRate: 2.7, name: Technology.KOTLIN},
+        {experienceRate: 4.0, name: Technology.KOTLIN},
         {experienceRate: 4, name: Technology.JAVA_SCRIPT},
         {experienceRate: 3.8, name: Technology.TYPE_SCRIPT},
         {experienceRate: 2, name: Technology.PHP},
@@ -32,13 +32,14 @@ export class ToolsComponent {
     {
       title: 'AI',
       tools: [
-        {experienceRate: 3.7, name: 'ChatGPT'},
+        {experienceRate: 4.2, name: 'ChatGPT'},
         {experienceRate: 3, name: 'GitHub Copilot'},
-        {experienceRate: 3.7, name: 'Claude Code'},
-        {experienceRate: 2, name: 'Gemini'},
+        {experienceRate: 4.5, name: 'Claude Code'},
+        {experienceRate: 4.2, name: 'Gemini'},
         {experienceRate: 3.7, name: 'Building Agents'},
         {experienceRate: 3.7, name: 'Creating Skills'},
-        {experienceRate: 3, name: 'MCP'},
+        {experienceRate: 3.7, name: 'Creating workflows'},
+        {experienceRate: 4.2, name: 'MCP'},
       ],
     },
     {
@@ -106,7 +107,6 @@ export class ToolsComponent {
       title: 'Infrastructure / monitoring (as a user not devOps)',
       tools: [
         {experienceRate: 4.5, name: 'CI/CD'},
-        {experienceRate: 3, name: Technology.MESOS},
         {experienceRate: 4.5, name: Technology.JENKINS},
         {experienceRate: 5, name: Technology.GRAFANA},
         {experienceRate: 4.5, name: Technology.KIBANA},
@@ -122,6 +122,7 @@ export class ToolsComponent {
         {experienceRate: 3.5, name: Technology.GITLAB},
         {experienceRate: 3.5, name: Technology.GITHUB},
         {experienceRate: 4.5, name: Technology.BITBUCKET},
+        {experienceRate: 3, name: Technology.MESOS},
       ],
     },
     {

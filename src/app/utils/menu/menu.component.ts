@@ -1,13 +1,13 @@
 import {Component, effect, ElementRef, inject, viewChild} from '@angular/core';
 import {MenuService} from './menu.service';
-import {RouterLink} from '@angular/router';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
   standalone: true,
-  imports: [RouterLink]
+  imports: [RouterLink, RouterLinkActive]
 })
 export class MenuComponent {
   isMenuVisible = viewChild<ElementRef>('menuVisibilityCheckbox');

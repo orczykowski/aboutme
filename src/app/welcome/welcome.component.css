@@ -7,6 +7,11 @@ div {
 div * {
   text-align: left;
 }
+
+p {
+  margin-bottom: 0.85em;
+  line-height: 1.7;
+}
 div a {
   opacity: 0.6;
 }
