@@ -1,6 +1,7 @@
-import {Component, ElementRef, viewChild} from '@angular/core';
+import {Component, ElementRef, inject, viewChild} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {MenuComponent} from './utils/menu/menu.component';
+import {SeoService} from './utils/seo/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,10 @@ import {MenuComponent} from './utils/menu/menu.component';
 })
 export class AppComponent {
   isMenuVisible = viewChild<ElementRef>('menuVisibilityCheckbox');
+
+  constructor() {
+    inject(SeoService).init();
+  }
 
   hideMenu(): void {
     const checkbox = this.isMenuVisible();

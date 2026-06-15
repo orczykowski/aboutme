@@ -5,9 +5,13 @@
   border-bottom: 1px solid var(--dark-gray);
 }
 
-.welcome-header h2 {
+.welcome-header .role-tagline {
   margin: 0;
   letter-spacing: 0.01em;
+  font-size: 1.3em;
+  color: var(--yellow);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Two-column layout */
@@ -32,7 +36,7 @@
   gap: 1.5em;
 }
 
-.pillar h3 {
+.pillar h2 {
   font-size: 0.78em;
   text-transform: uppercase;
   letter-spacing: 0.06em;

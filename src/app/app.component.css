@@ -1,3 +1,14 @@
+.surname-header .firstname {
+  display: block;
+  font-family: 'JetBreinsFont', monospace;
+  font-size: 0.4em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-weight: 300;
+  margin-bottom: -0.1em;
+}
+
 /*Content*/
 .content {
   display: block;
