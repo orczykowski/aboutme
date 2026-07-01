@@ -33,11 +33,12 @@
         </div>
         <div class="full-links">
           @for (link of project.links; track link.url) {
-            <a class="project-link" [href]="link.url" target="_blank" rel="noopener noreferrer">
+            <a [class]="link.label === 'GitHub' ? 'project-link project-link--github' : 'project-link project-link--demo'"
+               [href]="link.url" target="_blank" rel="noopener noreferrer">
               @if (link.label === 'GitHub') {
-                View source on GitHub
+                <span class="link-icon">&lt;/&gt;</span> View source on GitHub
               } @else {
-                Open project
+                <span class="link-icon">↗</span> Open project
               }
             </a>
           }
